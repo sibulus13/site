@@ -1,10 +1,5 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {};
+import NavBar from "../components/generic/NavBar";
 
 export default function RootLayout({
   children,
@@ -13,7 +8,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="px-4">{children}</body>
+      <head>
+        <meta charSet="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+      <body>
+        <div>
+          <NavBar></NavBar>
+          <div className="px-4">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Skills from "./Skills";
 
 export default function Introduction() {
   return (
@@ -34,6 +35,8 @@ export default function Introduction() {
       >
         {">"} Learn more about my skills here {"<"}
       </Link>
+      <div className="h-44"></div>
+      <Skills></Skills>
     </div>
   );
 }

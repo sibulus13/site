@@ -1,0 +1,16 @@
+Nav Bar
+- Home
+- About Me
+- Projects
+- Adventures
+
+Home screen
+Introduction section:
+- Introduction
+  - Profile Pic
+  - Hi I'm Michael
+  Googling and developing to learn more about the world and myself
+  - chips: Software Engineer, gamer, outdoor and adrenaline enthusiast
+  - 
+
+  - Intro to skills
