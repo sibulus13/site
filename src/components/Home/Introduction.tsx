@@ -32,10 +32,10 @@ export default function Introduction() {
 
         <div className="relative h-1/3">
           <Image
-            src={"/profile/cat_typing.gif"}
+            src="/profile/cat_typing.gif"
             alt="cat typing"
             fill
-            className="object-contain"
+            className="object-contain rounded-full"
           ></Image>
         </div>
         <Link href="/AboutMe" className="flex justify-end underline pt-4">
@@ -44,7 +44,7 @@ export default function Introduction() {
       </div>
 
       <Link
-        className="flex justify-center underline pb-8"
+        className="flex justify-center underline pb-10"
         href="#latestProject"
       >
         <BiDownArrow className="text-2xl"></BiDownArrow>

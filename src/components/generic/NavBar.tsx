@@ -8,7 +8,7 @@ const items = [
 
 export default function NavBar() {
   return (
-    <div className="fixed w-screen z-10 p-2 border-b-2 bg-black">
+    <div className="fixed w-screen z-10 p-2 border-b-2 bg-black pr-6">
       <div className="flex justify-between">
         <Link href="/" className="pr-20">
           <h1>黄</h1>
