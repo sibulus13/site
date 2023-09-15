@@ -19,7 +19,6 @@ export async function getPostContent(type: string) {
   let articles = await Promise.all(
     posts.map((post) => getArticleFromSlug(post))
   );
-  console.log(articles, "articles");
   // sort articles by reverse chronological date
   articles = articles.sort((a, b) => {
     return (
@@ -63,7 +62,6 @@ export function get_image_title(img_props: any) {
 export function alt_caption(url: string) {
   let name = url.split(".")[0];
   name = name.split("/")[name.split("/").length - 1];
-  // console.log(name)
   return name;
 }
 
