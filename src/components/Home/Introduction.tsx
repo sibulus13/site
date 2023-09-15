@@ -7,9 +7,9 @@ const titles = ["Software Engineer", "Adventurer", "Potato"];
 export default function Introduction() {
   return (
     <div className="h-screen min-h-screen flex flex-col">
-      <div className="grow flex flex-col justify-center md:flex-row md:pt-20">
+      <div className="grow flex flex-col justify-center md:flex-row">
         {/* Text container */}
-        <div className="md:w-1/3 flex flex-col justify-center md:pr-4">
+        <div className="flex flex-col justify-center md:pr-4 md:w-1/3">
           <h1 className="text-3xl md:text-6xl">Hi, I am Michael</h1>
           <div className="flex text-xs gap-2 md:pt-2">
             {titles.map((title, index) => (
@@ -30,8 +30,10 @@ export default function Introduction() {
         </div>
 
         <br></br>
-        <div className="md:w-1/3 flex flex-col justify-center">
-          <div className="relative h-1/3 md:h-2/3">
+
+        {/* Image Container */}
+        <div className="flex flex-col justify-center h-1/2 md:h-full md:w-1/3">
+          <div className="relative h-full md:h-2/3">
             <Image
               src="/profile/cat_typing.gif"
               alt="cat typing"
