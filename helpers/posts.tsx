@@ -66,13 +66,13 @@ export function alt_caption(url: string) {
 }
 
 export const components = {
-  p: (props) => <p>{props.children}</p>,
-  a: (props) => (
+  p: (props: any) => <p>{props.children}</p>,
+  a: (props: any) => (
     <Link href={props.href}>
       <ins>{props.children}</ins>
     </Link>
   ),
-  Image: (props) => (
+  Image: (props: any) => (
     <div className="flex flex-col items-center pt-2">
       <Image
         src={props.src}
@@ -86,8 +86,8 @@ export const components = {
       <h6>{get_image_title(props)}</h6>
     </div>
   ),
-  h1: (props) => <h1>{props.children}</h1>,
-  h2: (props) => <h2>{props.children}</h2>,
-  h3: (props) => <h3>{props.children}</h3>,
-  h6: (props) => <h6>{props.children}</h6>,
+  h1: (props: any) => <h1>{props.children}</h1>,
+  h2: (props: any) => <h2>{props.children}</h2>,
+  h3: (props: any) => <h3>{props.children}</h3>,
+  h6: (props: any) => <h6>{props.children}</h6>,
 };
