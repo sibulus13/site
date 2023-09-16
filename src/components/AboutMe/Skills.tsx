@@ -37,7 +37,6 @@ import {
 } from "react-icons/si";
 
 const saveAs = require("file-saver");
-
 import listRenderer from "../generic/listRenderer";
 
 export default function Skills() {
