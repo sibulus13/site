@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getPostContent, alt_caption } from "../../../helpers/posts";
+import { alt_caption } from "../../../helpers/posts";
 
 export default function Post(props: { content: any}) {
   const { content } = props;
