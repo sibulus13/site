@@ -35,7 +35,8 @@ import {
   SiLabview,
   SiVuetify,
 } from "react-icons/si";
-import { saveAs } from "file-saver";
+
+const saveAs = require("file-saver");
 
 import listRenderer from "../generic/listRenderer";
 
