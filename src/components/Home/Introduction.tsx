@@ -2,18 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiDownArrow } from "react-icons/bi";
 
+import * as Main from "../../style/main";
+
 const titles = ["Software Engineer", "Adventurer", "Potato"];
 
 export default function Introduction() {
   return (
-    <div className="h-screen min-h-screen flex flex-col">
+    <div className={Main.fullPage}>
       <div className="grow flex flex-col justify-center md:flex-row">
         {/* Text container */}
         <div className="flex flex-col justify-center md:pr-4 md:w-1/3">
-          <h1 className="text-3xl md:text-6xl">Hi, I am Michael</h1>
+          <h1 className={Main.h1}>Hi, I am Michael</h1>
           <div className="flex text-xs gap-2 md:pt-2">
             {titles.map((title, index) => (
-              <p key={index} className="border rounded px-1">
+              <p key={index} className="border rounded px-1 whitespace-nowrap">
                 {title}
               </p>
             ))}

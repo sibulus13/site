@@ -14,3 +14,11 @@ Introduction section:
   - 
 
   - Intro to skills
+
+
+About Me
+- Introduction
+  - Another Pic
+  - Longer paragraph about myself technically
+- Skills
+- 
