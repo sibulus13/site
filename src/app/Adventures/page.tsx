@@ -11,12 +11,8 @@ export default async function Projects() {
           <h1 className={Main.h1}>Adventures</h1>
           <div>
             {projects.map((project, index) => (
-                <Post
-                    key={index}
-                    content={project}
-                ></Post>
-                ))       
-            }
+              <Post key={index} content={project}></Post>
+            ))}
           </div>
         </div>
       </div>

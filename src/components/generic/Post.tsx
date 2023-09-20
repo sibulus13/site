@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { alt_caption } from "../../../helpers/posts";
 
-export default function Post(props: { content: any}) {
+export default function Post(props: { content: any }) {
   const { content } = props;
   return (
-    <div className="flex py-6 justify-between even:flex-row-reverse">
+    <div className="flex py-6 justify-center even:flex-row-reverse">
       {/* Img container */}
-      <div className="w-1/2 relative">
+      <div className="relative h-64 w-64">
         <Image
           src={
             content.frontmatter.thumbnailUrl
@@ -19,15 +19,17 @@ export default function Post(props: { content: any}) {
               : "/profile/dancingRobot.gif"
           )}
           fill
-          className="object-contain rounded-full border-x-4"
+          className="object-cover rounded-lg border-x-2"
         ></Image>
       </div>
       {/* Text container */}
-      <div className="w-1/2 px-4">
-        <h2 className="text-lg">{content.frontmatter.title}</h2>
-        <p className="text-right">{content.frontmatter.date}</p>
+      <div className="w-64 px-4 even:pr-6 odd:pl-6">
+        <h2 className="text-xl">{content.frontmatter.title}</h2>
+        <p className="text-right whitespace-nowrap text-sm">
+          {content.frontmatter.date}
+        </p>
         <div className="border mb-1"></div>
-        <p>{content.frontmatter.description}</p>
+        <p className="">{content.frontmatter.description}</p>
       </div>
     </div>
   );
