@@ -1,10 +1,13 @@
 import Image from "next/image";
 import { alt_caption } from "../../../helpers/posts";
 
-export default function Post(props: { content: any }) {
-  const { content } = props;
+import Link from "next/link";
+
+export default function Post(props: { content: any, type: string }) {
+  const { content, type } = props;
+  const slug = content.frontmatter.slug.split('/')[2];
   return (
-    <div className="flex py-6 justify-center even:flex-row-reverse">
+    <Link href={`/${type}/${slug}`} className="flex even:flex-row-reverse justify-center py-6">
       {/* Img container */}
       <div className="relative h-64 w-64">
         <Image
@@ -31,6 +34,6 @@ export default function Post(props: { content: any }) {
         <div className="border mb-1"></div>
         <p className="">{content.frontmatter.description}</p>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -1,9 +1,8 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Link from "next/link";
-import Image from "next/image";
-
+import { serialize } from "next-mdx-remote/serialize";
+import { compileMDX } from 'next-mdx-remote/rsc'
 export async function getPostsFileNames(type: string) {
   const dir = path.join("./posts", type);
   const filenames = fs.readdirSync(dir);
@@ -52,42 +51,39 @@ export async function getArticleFromSlug(slug: string) {
 }
 
 // returns the title portion of path
-export function get_image_title(img_props: any) {
+export async function get_image_title(img_props: any) {
   let title = img_props.src.split("/").slice(-1)[0];
   title = title.split(".").slice(-2)[0];
   return title;
 }
 
 // grabs name portion of url.
-export function alt_caption(url: string) {
+export async function alt_caption(url: string) {
   let name = url.split(".")[0];
   name = name.split("/")[name.split("/").length - 1];
   return name;
 }
 
-export const components = {
-  p: (props: any) => <p>{props.children}</p>,
-  a: (props: any) => (
-    <Link href={props.href}>
-      <ins>{props.children}</ins>
-    </Link>
-  ),
-  Image: (props: any) => (
-    <div className="flex flex-col items-center pt-2">
-      <Image
-        src={props.src}
-        alt={get_image_title(props)}
-        // style={{
-        //   objectFit: "contain",
-        // }}
-        width="600"
-        height="600"
-      />
-      <h6>{get_image_title(props)}</h6>
-    </div>
-  ),
-  h1: (props: any) => <h1>{props.children}</h1>,
-  h2: (props: any) => <h2>{props.children}</h2>,
-  h3: (props: any) => <h3>{props.children}</h3>,
-  h6: (props: any) => <h6>{props.children}</h6>,
-};
+export async function parseArticleContent(slug: string, type: string) {
+  const { content, frontmatter } = await getArticleFromSlug(slug);
+  const mdxSource = await serialize(content);
+  let files: string[] = [];
+  if (frontmatter.carousel_dir) {
+    // grab name of all files in carousel_dir
+    files = fs.readdirSync(
+      path.join("public", "posts", type, frontmatter.carousel_dir)
+    );
+    files = files.map(
+      (file) => `/posts/${type}/${frontmatter.carousel_dir}/${file}`
+    );
+  }
+
+  return {
+    post: {
+      source: mdxSource,
+      content: content,
+      frontmatter,
+    },
+    carousel: files,
+  };
+}
