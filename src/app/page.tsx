@@ -1,6 +1,5 @@
 import Introduction from "@/components/Home/Introduction";
 import Latest from "@/components/Home/Latest";
-
 import Link from "next/link";
 import {
   BiLogoLinkedin,
