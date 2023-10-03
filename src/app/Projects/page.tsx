@@ -1,6 +1,6 @@
 import * as Main from "../../style/main";
-import Post from "@/components/generic/Post";
-import { getPostContent, alt_caption } from "../../../helpers/posts";
+import Post from "@/components/generic/MDXPost";
+import { getPostContent, alt_caption } from "../../helpers/posts";
 
 export default async function Projects() {
   const projects = await getPostContent("showcase");

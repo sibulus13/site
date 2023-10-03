@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiDownArrow } from "react-icons/bi";
 
-import { getPostContent, alt_caption } from "../../../helpers/posts";
+import { getPostContent, alt_caption } from "../../helpers/posts";
 
 export default async function LatestProject() {
   const posts = await getPostContent("showcase");

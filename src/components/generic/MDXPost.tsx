@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { alt_caption } from "../../../helpers/posts";
+import { alt_caption } from "../../helpers/posts";
 
 import Link from "next/link";
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getPostContent, alt_caption } from "../../../helpers/posts";
+import { getPostContent, alt_caption } from "../../helpers/posts";
 
 export default async function Latest({ type, CTA, hrefMore, titleID }) {
   const posts = await getPostContent(type);
