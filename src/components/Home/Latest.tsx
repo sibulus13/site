@@ -6,9 +6,14 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
   const posts = await getBlogPosts(type);
   const post = posts[0];
   console.log(post);
-  const { title, description, thumbnail, date } = post.fields;
+  const { title, description, thumbnail, date } = post.fields as {
+    title: string;
+    description: string;
+    thumbnail: any;
+    date: string;
+  };
   const { id } = post.sys;
-  const { url, title: alt } = thumbnail.fields.file;
+   const { url, title: alt } = thumbnail.fields.file;
 
   return (
     <div id={titleID} className="h-screen min-h-screen flex flex-col">
@@ -33,7 +38,7 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
         </div>
         <div>
           <Link className="flex justify-end underline pb-8" href={hrefMore}>
-            More {type}s
+            More {type}
           </Link>
         </div>
         {CTA}

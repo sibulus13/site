@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BiDownArrow } from "react-icons/bi";
-
 import * as Main from "../../style/main";
+
+import cat_typing_img from "../../../public/profile/cat_typing.gif";
 
 const titles = ["Software Engineer", "Adventurer", "Potato"];
 
@@ -37,10 +38,10 @@ export default function Introduction() {
         <div className="flex flex-col justify-center h-1/2 md:h-full md:w-1/3">
           <div className="relative h-full md:h-2/3">
             <Image
-              src="/profile/cat_typing.gif"
+              src={cat_typing_img}
               alt="cat typing"
               fill
-              className="object-contain rounded-full "
+              className="object-contain rounded-full"
             ></Image>
           </div>
           <Link
