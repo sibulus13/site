@@ -19,7 +19,7 @@ export default function Introduction() {
         <br></br>
 
         <div className="">
-          <h1>Hi, I am Michael</h1>
+          <h1 className="text-3xl">Hi, I am Michael</h1>
           <p>
             As a Full Stack Software Engineer with 3+ years of tech-related work
             experience, I have gained domain knowledge in a variety of

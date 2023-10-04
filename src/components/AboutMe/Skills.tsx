@@ -50,7 +50,7 @@ export default function Skills() {
   return (
     <div id="skills" className="min-h-screen flex flex-col pb-8">
       <div className="grow">
-        <h1>Skills</h1>
+        <h1 className="text-3xl">Skills</h1>
         <p>
           Over the years I have gained experience with a variety of languages,
           frameworks, and tools, some of which are listed here. Learn more about
