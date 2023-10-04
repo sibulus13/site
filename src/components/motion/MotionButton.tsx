@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 export default function MotionButton(props: any) {
-  console.log(props);
   return (
     <Link href={props.href} className={props.className}>
       <motion.button
