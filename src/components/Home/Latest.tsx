@@ -26,7 +26,7 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
               src={"https:" + url}
               alt={title}
               fill
-              className="object-contain border rounded-xl"
+              className="object-cover border rounded-xl"
             ></Image>
           </div>
           <div className="pt-4">
