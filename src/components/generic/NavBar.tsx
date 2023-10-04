@@ -1,4 +1,4 @@
-import Link from "next/link";
+import MotionButton from "../motion/MotionButton";
 
 const items = [
   { name: "About Me", href: "/AboutMe" },
@@ -10,14 +10,14 @@ export default function NavBar() {
   return (
     <div className="fixed w-screen z-10 p-2 border-b-2 bg-black pr-6 md:px-24">
       <div className="flex justify-between">
-        <Link href="/" className="pr-20 md:pr-60 lg:pr-96">
+        <MotionButton href="/" className="pr-20 md:pr-60 lg:pr-96">
           <h1>黄</h1>
-        </Link>
+        </MotionButton>
         <div className="flex justify-between grow lg:pl-42">
           {items.map((item, index) => (
-            <div key={index}>
-              <Link href={item.href}>{item.name}</Link>
-            </div>
+            <MotionButton key={index} href={item.href}>
+              <h1>{item.name}</h1>
+            </MotionButton>
           ))}
         </div>
       </div>
