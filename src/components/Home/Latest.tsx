@@ -5,7 +5,6 @@ import { getBlogPosts } from "@/helpers/contentful";
 export default async function Latest({ type, CTA, hrefMore, titleID }) {
   const posts = await getBlogPosts(type);
   const post = posts[0];
-  console.log(post);
   const { title, description, thumbnail, date } = post.fields as {
     title: string;
     description: string;
