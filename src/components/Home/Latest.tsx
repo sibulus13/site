@@ -1,10 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getPostContent, alt_caption } from "../../helpers/posts";
+import { getBlogPosts } from "@/helpers/contentful";
 
 export default async function Latest({ type, CTA, hrefMore, titleID }) {
-  const posts = await getPostContent(type);
+  const posts = await getBlogPosts(type);
   const post = posts[0];
+  console.log(post);
+  const { title, description, thumbnail, date } = post.fields;
+  const { id } = post.sys;
+  const { url, title: alt } = thumbnail.fields.file;
+
   return (
     <div id={titleID} className="h-screen min-h-screen flex flex-col">
       <h1 className="pt-14 text-3xl md:text-6xl md:pl-20">
@@ -14,24 +19,16 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
         <div className="grow m-2 p-2 flex flex-col">
           <div className="relative h-1/2 grow">
             <Image
-              src={
-                post.frontmatter.thumbnailUrl
-                  ? post.frontmatter.thumbnailUrl
-                  : "/profile/dancingRobot.gif"
-              }
-              alt={alt_caption(
-                post.frontmatter.thumbnailUrl
-                  ? post.frontmatter.thumbnailUrl
-                  : "/profile/dancingRobot.gif"
-              )}
+              src={"https:" + url}
+              alt={title}
               fill
               className="object-contain border rounded-xl"
             ></Image>
           </div>
           <div className="pt-4">
-            <h2>{post.frontmatter.title}</h2>
-            <p>{post.frontmatter.date}</p>
-            <p>{post.frontmatter.description}</p>
+            <h2>{title}</h2>
+            <p>{date}</p>
+            <p>{description}</p>
           </div>
         </div>
         <div>

@@ -42,7 +42,7 @@ export default async function Home() {
       <Introduction></Introduction>
       <div className="h-44"></div>
       <Latest
-        type="showcase"
+        type="projects"
         CTA={projectCTA}
         titleID="latestProject"
         hrefMore={"/Projects"}

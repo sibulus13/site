@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function ContentfulPost(content: any) {
   const { title, description, thumbnail, date } = content.content.fields;
   const { id } = content.content.sys;
+  const { url, title: alt } = thumbnail.fields.file;
 
   return (
     <Link
@@ -18,8 +19,8 @@ export default function ContentfulPost(content: any) {
       {/* Img container */}
       <div className="relative h-64 w-64">
         <Image
-          src={"https:" + thumbnail.fields.file.url}
-          alt={thumbnail.fields.file.title}
+          src={"https:" + url}
+          alt={title}
           fill
           className="object-cover rounded-lg border-x-2"
         ></Image>
