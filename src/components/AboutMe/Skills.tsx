@@ -72,11 +72,8 @@ export default function Skills() {
         {listRenderer(tools)}
       </div>
 
-      <Link
-        className="flex justify-center underline pb-8"
-        href="#latestProject"
-      >
-        {">"} Learn more about my most recent project {"<"}
+      <Link className="flex justify-center underline pb-8" href="/Projects">
+        {">"} Learn more about my most recent projects {"<"}
       </Link>
     </div>
   );
