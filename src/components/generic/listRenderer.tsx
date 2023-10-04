@@ -14,7 +14,8 @@ export default function listRenderer(items: any[]) {
               scale: [1, 1.2, 1.4, 1.2, 1, 0.8, 0.6, 0.8, 1],
               transition: { duration: 0.7, delay: 0.3 * index },
             }}
-            whileHover={{
+            initial={{ rotate: 0, scale: 1 }}
+            whileTap={{
               rotate: [0, -5, -10, -5, 0, 5, 10, 5, 0],
               scale: [1, 1.2, 1.4, 1.2, 1, 0.8, 0.6, 0.8, 1],
               transition: { duration: 0.7},
