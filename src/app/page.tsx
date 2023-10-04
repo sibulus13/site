@@ -18,7 +18,7 @@ const adventureCTA = (
       <Link href="https://github.com/sibulus13">
         <BiLogoGithub></BiLogoGithub>
       </Link>
-      <Link href="chengjie.michael.huang@gmail.com">
+      <Link href="mailto:chengjie.michael.huang@gmail.com">
         <BiLogoGmail></BiLogoGmail>
       </Link>
     </div>
