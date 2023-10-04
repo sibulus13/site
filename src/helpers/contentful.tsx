@@ -69,15 +69,18 @@ export const options = {
     ),
     [BLOCKS.HR]: (node: any, children: any) => <hr className="my-4" />,
     [BLOCKS.EMBEDDED_ASSET]: (node: any) => (
-      <div className="flex justify-center">
+      <div>
         <br />
-        <Image
-          className="rounded-lg"
-          src={"https:" + node.data.target.fields.file.url}
-          alt={node.data.target.fields.file.title}
-          width={node.data.target.fields.file.details.image.width}
-          height={node.data.target.fields.file.details.image.height}
-        ></Image>
+        <div className="mx-auto">
+          <Image
+            className="rounded-lg object-contain"
+            src={"https:" + node.data.target.fields.file.url}
+            alt={node.data.target.fields.file.title}
+            width={node.data.target.fields.file.details.image.width}
+            height={node.data.target.fields.file.details.image.height}
+          ></Image>
+        </div>
+        <p className="flex justify-center">{node.data.target.fields.title}</p>
         <br />
       </div>
     ),

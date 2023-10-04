@@ -17,9 +17,9 @@ export default async function Page({
   };
 
   return (
-    <div className="pt-14">
+    <div className="py-14">
       <BackButton></BackButton>
-      <div className="px-10">
+      <div className="px-10 lg:w-1/2 mx-auto">
         <h1 className="text-3xl">{title}</h1>
         <h3 className="text-xl">{description}</h3>
         <div>{documentToReactComponents(content, options)}</div>
