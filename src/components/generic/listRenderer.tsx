@@ -3,7 +3,7 @@ export default function listRenderer(items: any[]) {
     <div className="flex pt-2 flex-wrap justify-center">
       {items.map((item, index) => (
         <div
-          className="px-2 pb-2 flex flex-col items-center text-center"
+          className="px-4 pb-2 flex flex-col items-center text-center"
           key={index}
         >
           <div>{item.icon}</div>

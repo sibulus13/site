@@ -106,10 +106,10 @@ const languages = [
     name: "Bash",
     icon: <SiGnubash className="text-4xl"></SiGnubash>,
   },
-  {
-    name: "PowerShell",
-    icon: <TbBrandPowershell className="text-4xl"></TbBrandPowershell>,
-  },
+  // {
+  //   name: "PowerShell",
+  //   icon: <TbBrandPowershell className="text-4xl"></TbBrandPowershell>,
+  // },
 ];
 
 const frameworks = [
