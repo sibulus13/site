@@ -8,7 +8,7 @@ export default async function Projects() {
   posts.sort((a: any, b: any) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime();
   });
-  
+
   return (
     <div>
       <div className={Main.fullPage}>
@@ -16,7 +16,12 @@ export default async function Projects() {
           <h1 className={Main.h1}>Adventure</h1>
           <div className="py-10 gap-y-24 flex flex-col">
             {posts.map((post, index) => (
-              <ContentfulPost key={index} content={post}></ContentfulPost>
+              <ContentfulPost
+                key={index}
+                value={index}
+                content={post}
+                parentPath = "Adventures"
+              ></ContentfulPost>
             ))}
           </div>
         </div>

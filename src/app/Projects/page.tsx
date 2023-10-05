@@ -15,7 +15,12 @@ export default async function Projects() {
           <h1 className={Main.h1}>Projects</h1>
           <div className="py-10 gap-y-24 flex flex-col">
             {posts.map((post, index) => (
-              <ContentfulPost key={index} content={post}></ContentfulPost>
+              <ContentfulPost
+                key={index}
+                value={index}
+                content={post}
+                parentPath="Projects"
+              ></ContentfulPost>
             ))}
           </div>
         </div>
