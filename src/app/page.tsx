@@ -1,6 +1,7 @@
 import Introduction from "@/components/Home/Introduction";
 import Latest from "@/components/Home/Latest";
 import Link from "next/link";
+import MotionButton from "@/components/motion/MotionButton";
 import {
   BiLogoLinkedin,
   BiLogoGithub,
@@ -12,15 +13,15 @@ const adventureCTA = (
   <div className="mx-auto align-text-bottom pb-8 pt-8">
     Lets develop the future together
     <div className="flex justify-center gap-4 text-2xl pt-2">
-      <Link href="https://www.linkedin.com/in/sibulus0/">
+      <MotionButton href="https://www.linkedin.com/in/sibulus0/">
         <BiLogoLinkedin></BiLogoLinkedin>
-      </Link>
-      <Link href="https://github.com/sibulus13">
+      </MotionButton>
+      <MotionButton href="https://github.com/sibulus13">
         <BiLogoGithub></BiLogoGithub>
-      </Link>
-      <Link href="mailto:chengjie.michael.huang@gmail.com">
+      </MotionButton>
+      <MotionButton href="mailto:chengjie.michael.huang@gmail.com">
         <BiLogoGmail></BiLogoGmail>
-      </Link>
+      </MotionButton>
     </div>
   </div>
 );
