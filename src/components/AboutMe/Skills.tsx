@@ -72,7 +72,7 @@ export default function Skills() {
         {listRenderer(tools)}
       </div>
 
-      <Link className="flex justify-center underline pt-6" href="/Projects">
+      <Link className="flex justify-center underline py-6" href="/Projects">
         {">"} Learn more about my most recent projects {"<"}
       </Link>
     </div>
