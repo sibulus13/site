@@ -41,7 +41,7 @@ export default function Introduction() {
               src={cat_typing_img}
               alt="cat typing"
               fill
-              className="object-contain rounded-full"
+              className="object-contain rounded-b-full"
             ></Image>
           </div>
           <Link
