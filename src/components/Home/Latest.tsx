@@ -15,7 +15,7 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
    const { url, title: alt } = thumbnail.fields.file;
 
   return (
-    <div id={titleID} className="h-screen min-h-screen flex flex-col">
+    <div id={titleID} className="h-screen min-h-screen flex flex-col snap-start">
       <h1 className="pt-14 text-3xl md:text-6xl md:pl-20">
         Latest <span className="capitalize ">{type}</span>
       </h1>
@@ -37,7 +37,7 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
         </div>
         <div>
           <Link className="flex justify-end underline pb-8" href={hrefMore}>
-            More {type}
+            More {type}{ type[type.length - 1] === 's' ? '' : 's'}
           </Link>
         </div>
         {CTA}
