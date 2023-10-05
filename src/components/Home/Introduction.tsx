@@ -14,7 +14,7 @@ export default function Introduction() {
         {/* Text container */}
         <div className="flex flex-col justify-center md:pr-4 md:w-1/3">
           <h1 className={Main.h1}>Hi, I am Michael</h1>
-          <div className="flex text-xs gap-2 md:pt-2">
+          <div className="flex text-xs gap-2 pt-1 md:pt-2">
             {titles.map((title, index) => (
               <p key={index} className="border rounded px-1 whitespace-nowrap">
                 {title}
