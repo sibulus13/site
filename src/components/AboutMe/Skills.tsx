@@ -48,7 +48,7 @@ export default function Skills() {
   };
 
   return (
-    <div id="skills" className="min-h-screen flex flex-col pb-8">
+    <div id="skills" className="flex flex-col">
       <div className="grow">
         <h1 className="text-3xl">Skills</h1>
         <p>
@@ -62,17 +62,17 @@ export default function Skills() {
         </p>
         <br></br>
 
-        <h2>Languages</h2>
+        <h2 className="text-xl">Languages</h2>
         {listRenderer(languages)}
 
-        <h2>Frameworks</h2>
+        <h2 className="text-xl">Frameworks</h2>
         {listRenderer(frameworks)}
 
-        <h2>Tools</h2>
+        <h2 className="text-xl">Tools</h2>
         {listRenderer(tools)}
       </div>
 
-      <Link className="flex justify-center underline pb-8" href="/Projects">
+      <Link className="flex justify-center underline pt-6" href="/Projects">
         {">"} Learn more about my most recent projects {"<"}
       </Link>
     </div>

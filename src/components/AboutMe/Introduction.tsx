@@ -4,20 +4,10 @@ import Skills from "./Skills";
 
 export default function Introduction() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col">
       <div className="flex flex-col justify-center">
         <h1 className="pb-2">Introduction</h1>
-        <div className="relative h-1/2">
-          <Image
-            src={"/profile/cat_typing.gif"}
-            alt="cat typing"
-            fill
-            className="rounded-xl object-contain"
-          ></Image>
-        </div>
-
         <br></br>
-
         <div className="">
           <h1 className="text-3xl">Hi, I am Michael</h1>
           <p>
@@ -28,14 +18,7 @@ export default function Introduction() {
           </p>
         </div>
       </div>
-{/* 
-      <Link
-        className="flex justify-center underline py-8"
-        href="#skills"
-      >
-        {">"} Learn more about my skills here {"<"}
-      </Link> */}
-      <div className="h-20"></div>
+      <div className="h-14"></div>
       <Skills></Skills>
     </div>
   );
