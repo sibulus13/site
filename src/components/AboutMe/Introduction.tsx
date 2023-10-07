@@ -7,15 +7,6 @@ export default function Introduction() {
     <div className="flex flex-col">
       <div className="flex flex-col justify-center">
         <h1 className="pb-2">Introduction</h1>
-        <div className="relative h-1/2">
-          <Image
-            src={"/profile/cat_typing.gif"}
-            alt="cat typing"
-            fill
-            className="rounded-xl object-contain"
-          ></Image>
-        </div>
-
         <br></br>
 
         <div>
@@ -28,14 +19,7 @@ export default function Introduction() {
           </p>
         </div>
       </div>
-      {/* 
-      <Link
-        className="flex justify-center underline py-8"
-        href="#skills"
-      >
-        {">"} Learn more about my skills here {"<"}
-      </Link> */}
-      <div className="h-20"></div>
+      <div className="h-14"></div>
       <Skills></Skills>
     </div>
   );

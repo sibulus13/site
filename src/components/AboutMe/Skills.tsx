@@ -63,13 +63,13 @@ export default function Skills() {
         <br></br>
         <div className="pt-10"></div>
 
-        <h2>Languages</h2>
+        <h2 className="text-xl">Languages</h2>
         {listRenderer(languages)}
 
-        <h2>Frameworks</h2>
+        <h2 className="text-xl">Frameworks</h2>
         {listRenderer(frameworks)}
 
-        <h2>Tools</h2>
+        <h2 className="text-xl">Tools</h2>
         {listRenderer(tools)}
       </div>
 
