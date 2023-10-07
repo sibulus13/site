@@ -4,7 +4,7 @@ import Skills from "./Skills";
 
 export default function Introduction() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col">
       <div className="flex flex-col justify-center">
         <h1 className="pb-2">Introduction</h1>
         <div className="relative h-1/2">
@@ -18,17 +18,17 @@ export default function Introduction() {
 
         <br></br>
 
-        <div className="">
-          <h1>Hi, I am Michael</h1>
+        <div>
+          <h1 className="text-3xl">Hi, I am Michael</h1>
           <p>
-            As a Full Stack Software Engineer with 3+ years of tech-related work
+            As a Full Stack Software Engineer with 3 years of tech-related work
             experience, I have gained domain knowledge in a variety of
             industries including: Agri-Tech, Robotics, Clean Energy, and
             Education utilizing a larger variety of technologies.
           </p>
         </div>
       </div>
-{/* 
+      {/* 
       <Link
         className="flex justify-center underline py-8"
         href="#skills"

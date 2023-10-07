@@ -48,9 +48,9 @@ export default function Skills() {
   };
 
   return (
-    <div id="skills" className="min-h-screen flex flex-col pb-8">
+    <div id="skills" className="flex flex-col">
       <div className="grow">
-        <h1>Skills</h1>
+        <h1 className="text-3xl">Skills</h1>
         <p>
           Over the years I have gained experience with a variety of languages,
           frameworks, and tools, some of which are listed here. Learn more about
@@ -61,6 +61,7 @@ export default function Skills() {
           .
         </p>
         <br></br>
+        <div className="pt-10"></div>
 
         <h2>Languages</h2>
         {listRenderer(languages)}
@@ -72,7 +73,10 @@ export default function Skills() {
         {listRenderer(tools)}
       </div>
 
-      <Link className="flex justify-center underline pb-8" href="/Projects">
+      <Link
+        className="flex justify-center underline pt-20 pb-10"
+        href="/Projects"
+      >
         {">"} Learn more about my most recent projects {"<"}
       </Link>
     </div>
