@@ -52,7 +52,7 @@ export default function Skills() {
       <div className="grow">
         <h1 className="text-3xl">Skills</h1>
         <p>
-          Over the years I have gained experience with a variety of languages,
+          Over the years I have gained experience utilizing a variety of languages,
           frameworks, and tools, some of which are listed here. Learn more about
           my skills and experiences through my{" "}
           <a className="underline" onClick={saveResume}>
