@@ -1,19 +1,19 @@
 import PostLayout from "@/components/Post/PostLayout";
-import Head from "next/head";
+import { Metadata } from "next";
 
 export default async function Projects() {
   return (
-    <>
-      <Head>
-        <title>Projects</title>
-        <meta name="description" content="Projects" />
-        <link rel="icon" href="/lastName.png" />
-      </Head>
       <PostLayout
         title="Projects"
         parentPath="Projects"
         blogType="projects"
       ></PostLayout>
-    </>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "A list of my most recent projects",
+  
+};

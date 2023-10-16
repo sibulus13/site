@@ -1,17 +1,16 @@
 import Introduction from "@/components/AboutMe/Introduction";
-import Head from "next/head";
+import { Metadata } from "next";
 
 export default function Aboutme() {
   return (
-    <>
-      <Head>
-        <title>About Me</title>
-        <meta name="description" content="About Me" />
-        <link rel="icon" href='/lastName.png' />
-      </Head>
-      <div className="pt-4">
-        <Introduction />
-      </div>
-    </>
+    <div className="pt-4">
+      <Introduction />
+    </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: "About Me",
+  description:
+    "My introduction, listed skills, and a link to my most recent projects",
+};

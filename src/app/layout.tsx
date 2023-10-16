@@ -1,6 +1,12 @@
 import "./globals.css";
 import NavBar from "../components/generic/NavBar";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
+import { Metadata } from "next";
+
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 export default function RootLayout({
   children,
@@ -23,3 +29,10 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  title: {
+    template: '黄 | %s',
+    default: '黄',
+  },
+};
