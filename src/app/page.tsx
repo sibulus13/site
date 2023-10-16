@@ -8,6 +8,7 @@ import {
   BiLogoGmail,
   BiDownArrow,
 } from "react-icons/bi";
+import { Metadata } from "next";
 
 const adventureCTA = (
   <div className="mx-auto align-text-bottom pb-8 pt-8">
@@ -58,3 +59,7 @@ export default async function Home() {
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: "黄 | Home",
+};
