@@ -15,5 +15,4 @@ export const metadata: Metadata = {
   title: "Projects",
   description:
     "A list of my most recent projects",
-  
 };
