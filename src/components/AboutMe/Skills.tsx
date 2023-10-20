@@ -50,7 +50,7 @@ export default function Skills() {
   return (
     <div id="skills" className="flex flex-col">
       <div className="grow">
-        <h1 className="text-3xl">Skills</h1>
+        <h1 className="text-2xl">Skills</h1>
         <p>
           Over the years I have gained experience utilizing a variety of languages,
           frameworks, and tools, some of which are listed here. Learn more about
@@ -63,13 +63,13 @@ export default function Skills() {
         <br></br>
         <div className="pt-10"></div>
 
-        <h2 className="text-xl">Languages</h2>
+        <h2 className="text-2xl">Languages</h2>
         {listRenderer(languages)}
 
-        <h2 className="text-xl">Frameworks</h2>
+        <h2 className="text-2xl">Frameworks</h2>
         {listRenderer(frameworks)}
 
-        <h2 className="text-xl">Tools</h2>
+        <h2 className="text-2xl">Tools</h2>
         {listRenderer(tools)}
       </div>
 
