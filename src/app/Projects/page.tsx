@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export default async function Projects() {
   return (
       <PostLayout
-        title="Projects:展示"
+        title="Projects | 展示"
         parentPath="Projects"
         blogType="projects"
       ></PostLayout>
