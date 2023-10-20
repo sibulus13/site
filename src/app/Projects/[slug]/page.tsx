@@ -23,6 +23,7 @@ export default async function Page({
       <div className="px-10 md:w-1/2 mx-auto">
         <h1 className="text-3xl">{title}</h1>
         <h3 className="text-xl">{description}</h3>
+        <div className="border-b-2 border-white"></div>
         <div>{documentToReactComponents(content, options)}</div>
       </div>
     </div>
