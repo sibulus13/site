@@ -3,9 +3,7 @@ import { Metadata } from "next";
 
 export default function Aboutme() {
   return (
-    <div className="pt-4">
       <Introduction />
-    </div>
   );
 }
 
