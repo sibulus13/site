@@ -4,6 +4,8 @@ import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 import Image from "next/image";
 import "../app/globals.css";
 
+import * as Main from "../style/main";
+
 export const client = createClient({
   space: env.CONTENTFUL_SPACE_ID,
   accessToken: env.CONTENTFUL_DELIVERY_ID,
@@ -34,11 +36,10 @@ export const options = {
       </div>
     ),
     [BLOCKS.HEADING_1]: (node: any, children: any) => (
-      <h1 className="text-3xl pt-8">{children}</h1>
+      <h1 className={Main.h2 + "pt-8"}>{children}</h1>
     ),
     [BLOCKS.HEADING_2]: (node: any, children: any) => (
       <div>
-        <br />
         <br />
         <h2 className="text-2xl pt-4">{children}</h2>
       </div>

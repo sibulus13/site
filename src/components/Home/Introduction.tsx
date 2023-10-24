@@ -18,19 +18,16 @@ export default function Introduction() {
           </h1>
           <div className="flex text-xs gap-2 pt-1 md:pt-2">
             {titles.map((title, index) => (
-              <p
-                key={index}
-                className="border rounded px-1 whitespace-nowrap"
-              >
+              <p key={index} className="border rounded px-1 whitespace-nowrap">
                 {title}
               </p>
             ))}
           </div>
           <p className={Main.p + "pt-2"}>
-            tinkering my way to a better tomorrow.
+            currently tinkering my way to a better tomorrow.
           </p>
           <br></br>
-          <p>
+          <p className={Main.subp}>
             As a Software Engineer armed with the power of technology to fight
             for a better world, I am passionate about improving life through
             data driven optimization.
@@ -50,7 +47,9 @@ export default function Introduction() {
           <br></br>
           <Link
             href="/AboutMe"
-            className={Main.p+"flex justify-end underline pt-4 md:justify-center"}
+            className={
+              Main.p + "flex justify-end underline pt-4 md:justify-center"
+            }
           >
             More about me
           </Link>
@@ -58,7 +57,7 @@ export default function Introduction() {
       </div>
 
       <Link
-        className={Main.p+"flex justify-center underline pb-10"}
+        className={Main.p + "flex justify-center underline pb-10"}
         href="#latestProject"
       >
         <BiDownArrow className="text-3xl"></BiDownArrow>
