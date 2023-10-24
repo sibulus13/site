@@ -9,11 +9,12 @@ import {
   BiDownArrow,
 } from "react-icons/bi";
 import { Metadata } from "next";
+import * as Main from "@/style/main";
 
 const adventureCTA = (
-  <div className="mx-auto align-text-bottom pb-8 pt-8">
+  <div className={Main.p + "mx-auto align-text-bottom pb-8 pt-8"}>
     Lets develop the future together
-    <div className="flex justify-center gap-4 text-2xl pt-2">
+    <div className="flex justify-center gap-4 text-3xl pt-2">
       <MotionButton href="https://www.linkedin.com/in/sibulus0/">
         <BiLogoLinkedin></BiLogoLinkedin>
       </MotionButton>
@@ -29,12 +30,12 @@ const adventureCTA = (
 
 const projectCTA = (
   <Link
-    className="flex justify-center align-text-bottom pb-8 underline"
+    className={Main.p + "flex justify-center align-text-bottom pb-8 underline"}
     href="#latestAdventure"
   >
-    <BiDownArrow className="text-2xl"></BiDownArrow>
+    <BiDownArrow className="text-3xl"></BiDownArrow>
     See what I have been up to
-    <BiDownArrow className="text-2xl"></BiDownArrow>
+    <BiDownArrow className="text-3xl"></BiDownArrow>
   </Link>
 );
 

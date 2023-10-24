@@ -13,27 +13,30 @@ export default function Introduction() {
       <div className="grow flex flex-col justify-center md:flex-row">
         {/* Text container */}
         <div className="flex flex-col justify-center md:pr-4 md:w-1/3">
-          <h1 className={Main.h1}>Hi, I am Michael</h1>
+          <h1 className={Main.h1}>
+            Hi, I am <span className={Main.mainGradient}>Michael</span>,
+          </h1>
           <div className="flex text-xs gap-2 pt-1 md:pt-2">
             {titles.map((title, index) => (
-              <p key={index} className="border rounded px-1 whitespace-nowrap">
+              <p
+                key={index}
+                className="border rounded px-1 whitespace-nowrap text-base"
+              >
                 {title}
               </p>
             ))}
           </div>
-          <p className="text-sm pt-2">
-            As a Software Engineer armed with the power of technology to fight
-            for a better world, I am passionate about applying data to improve
-            processes, such as quality of life.
-            <br></br>
-            <br></br>
-            In my free time, I enjoy exploring new sceneries, playing
-            competitive games, and absorbing new domains of knowledge.
+          <p className={Main.p + "pt-2"}>
+            tinkering my way to a better tomorrow.
           </p>
+          <br></br>
+          <p>
+            As a Software Engineer armed with the power of technology to fight
+            for a better world, I am passionate about improving life through
+            data driven optimization.
+          </p>
+          <br></br>
         </div>
-
-        <br></br>
-
         {/* Image Container */}
         <div className="flex flex-col justify-center h-1/2 md:h-full md:w-1/3">
           <div className="relative h-full md:h-2/3">
@@ -44,9 +47,10 @@ export default function Introduction() {
               className="object-contain rounded-b-full"
             ></Image>
           </div>
+          <br></br>
           <Link
             href="/AboutMe"
-            className="flex justify-end underline pt-4 md:justify-center"
+            className={Main.p+"flex justify-end underline pt-4 md:justify-center"}
           >
             More about me
           </Link>
@@ -54,12 +58,12 @@ export default function Introduction() {
       </div>
 
       <Link
-        className="flex justify-center underline pb-10"
+        className={Main.p+"flex justify-center underline pb-10"}
         href="#latestProject"
       >
-        <BiDownArrow className="text-2xl"></BiDownArrow>
-        Check out what I have been working on
-        <BiDownArrow className="text-2xl"></BiDownArrow>
+        <BiDownArrow className="text-3xl"></BiDownArrow>
+        Check out my latest work
+        <BiDownArrow className="text-3xl"></BiDownArrow>
       </Link>
     </div>
   );
