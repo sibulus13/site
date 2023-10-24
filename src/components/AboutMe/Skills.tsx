@@ -43,7 +43,7 @@ import * as Main from "@/style/main";
 export default function Skills() {
   const saveResume = () => {
     saveAs(
-      "publicprofileMichael Huang Resume.pdf.pdf",
+      "profile/Michael Huang Resume.pdf",
       "Michael_Huang_resume.pdf"
     );
   };
@@ -78,7 +78,7 @@ export default function Skills() {
         className={Main.p + "flex justify-center underline my-12"}
         href="/Projects"
       >
-        {">"} Check out my most recent projects {"<"}
+        {">"} See my most recent projects {"<"}
       </Link>
     </div>
   );
