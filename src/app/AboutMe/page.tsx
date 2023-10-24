@@ -36,7 +36,7 @@ export default function Aboutme() {
           className={Main.p + "flex justify-center underline my-12"}
           href="/Adventures"
         >
-          {">"} Check out my most recent adventures {"<"}
+          {">"} See my most recent adventures {"<"}
         </Link>
       </div>
     </div>

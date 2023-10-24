@@ -20,7 +20,7 @@ export default function Introduction() {
             {titles.map((title, index) => (
               <p
                 key={index}
-                className="border rounded px-1 whitespace-nowrap text-base"
+                className="border rounded px-1 whitespace-nowrap"
               >
                 {title}
               </p>
