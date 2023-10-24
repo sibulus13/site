@@ -12,7 +12,7 @@ export default async function Adventures() {
 }
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Adventures",
   description:
-    "A list of my most recent projects",
+    "A list of my most recent adventures",
 };
