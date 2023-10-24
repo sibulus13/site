@@ -1,0 +1,8 @@
+- Too long of an Intro
+            {/* As a Software Engineer armed with the power of technology to fight
+            for a better world, I am passionate about applying data to improve
+            processes, such as quality of life.
+            <br></br>
+            <br></br>
+            In my free time, I enjoy exploring new sceneries, playing
+            competitive games, and absorbing new domains of knowledge. */}
