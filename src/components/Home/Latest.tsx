@@ -23,7 +23,14 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
         Latest <span className="capitalize ">{type}</span>
       </h1>
       <div className="flex flex-col h-full md:w-1/3 md:mx-auto">
-        <div className="grow m-2 p-2 flex flex-col">
+        <Link className="grow m-2 p-2 flex flex-col" 
+        href={{
+          pathname: `${hrefMore}/` + title,
+          query: {
+            id: id,
+          },
+        }}
+        >
           <div className="relative h-1/2 grow">
             <Image
               src={"https:" + url}
@@ -37,7 +44,7 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
             <p className="text-right">{new Date(date).toDateString()}</p>
             <p>{description}</p>
           </div>
-        </div>
+        </Link>
         <div>
           <Link className="flex justify-end underline pb-8" href={hrefMore}>
             More {type}
