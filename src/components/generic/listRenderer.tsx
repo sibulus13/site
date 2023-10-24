@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import * as Main from "@/style/main";
 
 export default function listRenderer(items: any[]) {
   return (
@@ -18,12 +19,12 @@ export default function listRenderer(items: any[]) {
             whileTap={{
               rotate: [0, -5, -10, -5, 0, 5, 10, 5, 0],
               scale: [1, 1.2, 1.4, 1.2, 1, 0.8, 0.6, 0.8, 1],
-              transition: { duration: 0.7},
+              transition: { duration: 0.7 },
             }}
           >
             {item.icon}
           </motion.div>
-          <p>{item.name}</p>
+          <p className={Main.p}>{item.name}</p>
         </div>
       ))}
     </div>

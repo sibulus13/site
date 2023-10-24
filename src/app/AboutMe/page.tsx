@@ -1,9 +1,45 @@
-import Introduction from "@/components/AboutMe/Introduction";
+import Link from "next/link";
+
 import { Metadata } from "next";
+import Skills from "@/components/AboutMe/Skills";
+import * as Main from "@/style/main";
 
 export default function Aboutme() {
   return (
-      <Introduction />
+    <div className="flex flex-col justify-center pt-20">
+      <h1 className={Main.h1}>About Me | 我</h1>
+      <br></br>
+      <h1 className={Main.h2}>Professional Summary</h1>
+      <p className={Main.p}>
+        As a Full Stack Software Engineer with 3 years of tech-related work
+        experience, I have gained domain knowledge in a variety of industries
+        including: Agri-Tech, Robotics, Clean Energy, and Education while
+        utilizing a larger variety of technologies.
+      </p>
+      <div className="h-14"></div>
+      <Skills></Skills>
+      <h1 className={Main.h2}>Recreational Summary</h1>
+      <div className={Main.p}>
+        <p>
+          I spend my free time as an explorer, learner, and action enthusiast.
+          When traveling, you can find me out and about learning different
+          cultures and appreciating new sceneries while checking out new
+          restaurants and cafes along the way.
+        </p>
+        <br></br>
+        <p>
+          When home, I am usually motorcycling to a mountain for a hike in the
+          summer, or snowboarding in the winter with a cozy bowl of ramen to end
+          off my day.
+        </p>
+        <Link
+          className={Main.p + "flex justify-center underline my-12"}
+          href="/Adventures"
+        >
+          {">"} Check out my most recent adventures {"<"}
+        </Link>
+      </div>
+    </div>
   );
 }
 

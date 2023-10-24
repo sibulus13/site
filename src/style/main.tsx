@@ -4,7 +4,7 @@ export const h2 = 'text-3xl md:text-4xl '
 
 export const date = 'text-cyan-500 '
 
-export const p = 'text-xl md:text-2xl '
+export const p = 'text-xl md:text-2xl pt-1 '
 
 export const fullPage = 'h-screen min-h-screen flex flex-col'
 
