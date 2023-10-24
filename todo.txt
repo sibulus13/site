@@ -1,0 +1,3 @@
+- Favicon for head
+- Add tags to posts
+- Why is colored fonts no working?
