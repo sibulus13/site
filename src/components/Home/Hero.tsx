@@ -7,14 +7,18 @@ import cat_typing_img from "../../../public/profile/cat_typing.gif";
 
 const titles = ["Software Engineer", "Adventurer", "Potato"];
 
-export default function Introduction() {
+export default function Hero() {
   return (
     <div className={Main.fullPage}>
       <div className="grow flex flex-col justify-center md:flex-row">
         {/* Text container */}
         <div className="flex flex-col justify-center md:pr-4 md:w-1/3">
           <h1 className={Main.h1}>
-            Hi, I am <span className='bg-gradient-to-r from-gray-300 to-purple-400 inline-block text-transparent bg-clip-text'>Michael</span>,
+            Hi, I am{" "}
+            <span className="bg-gradient-to-r from-gray-300 to-purple-400 inline-block text-transparent bg-clip-text">
+              Michael
+            </span>
+            ,
           </h1>
           <div className="flex text-xs gap-2 pt-1 md:pt-2">
             {titles.map((title, index) => (
@@ -48,22 +52,21 @@ export default function Introduction() {
           <Link
             href="/AboutMe"
             className={
-              Main.p + "flex justify-end underline pt-4 md:justify-center"
+              Main.p + "flex justify-end underline py-4 md:justify-center"
             }
           >
             More about me
           </Link>
         </div>
+        <Link
+          className={Main.p + "flex justify-center underline pb-10"}
+          href="#latestProject"
+        >
+          <BiDownArrow className="text-3xl"></BiDownArrow>
+          Check out my latest work
+          <BiDownArrow className="text-3xl"></BiDownArrow>
+        </Link>
       </div>
-
-      <Link
-        className={Main.p + "flex justify-center underline pb-10"}
-        href="#latestProject"
-      >
-        <BiDownArrow className="text-3xl"></BiDownArrow>
-        Check out my latest work
-        <BiDownArrow className="text-3xl"></BiDownArrow>
-      </Link>
     </div>
   );
 }

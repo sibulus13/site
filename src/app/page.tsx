@@ -1,4 +1,4 @@
-import Introduction from "@/components/Home/Introduction";
+import Hero from "@/components/Home/Hero";
 import Latest from "@/components/Home/Latest";
 import Link from "next/link";
 import MotionButton from "@/components/motion/MotionButton";
@@ -14,7 +14,7 @@ import * as Main from "@/style/main";
 export default async function Home() {
   return (
     <div>
-      <Introduction></Introduction>
+      <Hero></Hero>
       <div className="h-44"></div>
       <Latest
         type="projects"
