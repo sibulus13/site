@@ -1,6 +1,6 @@
 export const primaryColor = "text-purple-200 ";
 
-export const secondaryColor = "text-cyan-500 ";
+export const secondaryColor = "text-violet-300 ";
 
 export const accentColor = "text-slate-300 ";
 
