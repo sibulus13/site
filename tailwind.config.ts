@@ -21,8 +21,8 @@ const config: Config = {
           my_color: '#4dcb7a',
       },
       gradientColorStopPositions: {
-        33: '33%',
-        66: '66%',
+        42: '42%',
+        69: '69%',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -32,6 +32,7 @@ const config: Config = {
     },
   },
   safelist: [
+    'text-purple-200',
     'text-cyan-500',
   ],
   plugins: [],
