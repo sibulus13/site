@@ -30,7 +30,7 @@ export default function RootLayout({
 
 export const metadata: Metadata = {
   title: {
-    template: "黄 | %s",
-    default: "黄",
+    template: "%s",
+    default: "",
   },
 };

@@ -34,7 +34,7 @@ export default async function Home() {
 }
 
 export const metadata: Metadata = {
-  title: "黄 | Home",
+  title: "Home",
 };
 
 const contactCTA = (
