@@ -10,7 +10,7 @@ const titles = ["Software Engineer", "Adventurer", "Potato"];
 export default function Hero() {
   return (
     <div className={Main.fullPage}>
-      <div className="grow flex flex-col justify-center md:flex-row">
+        <div className="grow flex flex-col justify-center md:flex-row">
         {/* Text container */}
         <div className="flex flex-col justify-center md:pr-4 md:w-1/3">
           <h1 className={Main.h1}>
@@ -57,14 +57,14 @@ export default function Hero() {
             More about me
           </MotionButton>
         </div>
-      </div>
-      <MotionButton
-        clickable
-        className={Main.p + "flex justify-center pb-10"}
-        href="#latestProject"
-      >
-        Check out my latest work
-      </MotionButton>
+        </div>
+        <MotionButton
+          clickable
+          className={Main.p + "flex justify-center pb-20"}
+          href="#latestProject"
+        >
+          Check out my latest work
+        </MotionButton>
     </div>
   );
 }
