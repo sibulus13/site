@@ -59,9 +59,6 @@ export default function Skills() {
           </a>
           .
         </p>
-        <br></br>
-        <div className="pt-10"></div>
-
         <h2 className={Main.h2}>Languages</h2>
         {listRenderer(languages)}
 

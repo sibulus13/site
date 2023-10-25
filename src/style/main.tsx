@@ -6,7 +6,7 @@ export const accentColor = "text-slate-300 ";
 
 export const h1 = primaryColor + "text-4xl md:text-6xl ";
 
-export const h2 = "text-3xl md:text-4xl ";
+export const h2 = "text-3xl md:text-4xl pt-6 pb-1";
 
 export const date = secondaryColor + " ";
 

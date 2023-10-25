@@ -9,7 +9,6 @@ export default function Aboutme() {
   return (
     <div className="flex flex-col justify-center">
       <h1 className={Main.h1}>About Me | 我</h1>
-      <br></br>
       <h1 className={Main.h2}>Professional Summary</h1>
       <p className={Main.p}>
         As a Full Stack Software Engineer with 3 years of tech-related work
@@ -17,7 +16,6 @@ export default function Aboutme() {
         including: Agri-Tech, Robotics, Clean Energy, and Education while
         utilizing a larger variety of technologies.
       </p>
-      <div className="h-14"></div>
       <Skills></Skills>
       <h1 className={Main.h2}>Recreational Summary</h1>
       <div className={Main.p}>

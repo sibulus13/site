@@ -3,7 +3,7 @@ import * as Main from "@/style/main";
 
 export default function listRenderer(items: any[]) {
   return (
-    <div className="flex pt-2 flex-wrap justify-center">
+    <div className="flex flex-wrap justify-center">
       {items.map((item, index) => (
         <div
           className="px-4 pb-2 flex flex-col items-center text-center"

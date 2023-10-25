@@ -39,6 +39,7 @@ const config: Config = {
     'rounded-3xl',
     'p-1',
     'px-3',
+    'pt-6',
   ],
   plugins: [],
 }
