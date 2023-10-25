@@ -35,7 +35,7 @@ export default function Aboutme() {
         </p>
         <MotionButton
           clickable
-          className={Main.p + "flex justify-center my-12"}
+          className={"flex justify-center my-12"}
           href="/Adventures"
         >
           See my most recent adventures

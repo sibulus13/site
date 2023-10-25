@@ -57,7 +57,7 @@ const contactCTA = (
 const adventureCTA = (
   <MotionButton
     clickable
-    className={Main.p + "flex justify-center pb-10"}
+    className={"flex justify-center pb-10"}
     href="#latestAdventure"
   >
     See what I have been up to

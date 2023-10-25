@@ -50,7 +50,7 @@ export default function Hero() {
           <MotionButton
             href="/AboutMe"
             clickable
-            className={Main.p + "flex justify-end py-4 md:justify-center"}
+            className={"flex justify-end py-4 md:justify-center"}
           >
             More about me
           </MotionButton>
@@ -58,7 +58,7 @@ export default function Hero() {
         </div>
         <MotionButton
           clickable
-          className={Main.p + "flex justify-center pb-20"}
+          className={"flex justify-center pb-20"}
           href="#latestProject"
         >
           Check out my latest work

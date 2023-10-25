@@ -51,7 +51,7 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
           </div>
         </Link>
         <div>
-          <MotionButton clickable className={Main.p + "flex justify-end pb-8"} href={hrefMore}>
+          <MotionButton clickable className={"flex justify-end pb-8"} href={hrefMore}>
             <span>
               More {type}
               {type[type.length - 1] === "s" ? "" : "s"}

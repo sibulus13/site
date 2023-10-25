@@ -74,7 +74,7 @@ export default function Skills() {
 
       <MotionButton
         clickable
-        className={Main.p + "flex justify-center my-12"}
+        className={"flex justify-center my-12"}
         href="/Projects"
       >
         See my most recent projects
