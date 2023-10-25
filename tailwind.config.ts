@@ -40,6 +40,7 @@ const config: Config = {
     'p-1',
     'px-3',
     'pt-6',
+    'pb-1'
   ],
   plugins: [],
 }
