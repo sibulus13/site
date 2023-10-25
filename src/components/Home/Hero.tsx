@@ -9,8 +9,8 @@ const titles = ["Software Engineer", "Adventurer", "Potato"];
 
 export default function Hero() {
   return (
-    <div className={Main.fullPage}>
-        <div className="grow flex flex-col justify-center md:flex-row">
+    <div className={Main.fullPage + "h-[70vh]"}>
+      <div className="grow flex flex-col justify-center md:flex-row">
         {/* Text container */}
         <div className="flex flex-col justify-center md:pr-4 md:w-1/3">
           <h1 className={Main.h1}>
@@ -30,7 +30,7 @@ export default function Hero() {
           <p className={Main.p + "pt-2"}>
             currently tinkering towards a better tomorrow.
           </p>
-          <p className={Main.subp + 'py-4'}>
+          <p className={Main.subp + "py-4"}>
             As a Software Engineer armed with the power of technology to fight
             for a better world, I am passionate about improving life through
             data driven optimization.
@@ -55,14 +55,14 @@ export default function Hero() {
             More about me
           </MotionButton>
         </div>
-        </div>
-        <MotionButton
-          clickable
-          className={"flex justify-center pb-20"}
-          href="#latestProject"
-        >
-          Check out my latest work
-        </MotionButton>
+      </div>
+      <MotionButton
+        clickable
+        className={"flex justify-center pb-20"}
+        href="#latestProject"
+      >
+        Check out my latest work
+      </MotionButton>
     </div>
   );
 }
