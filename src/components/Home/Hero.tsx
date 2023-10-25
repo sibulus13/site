@@ -10,7 +10,7 @@ const titles = ["Software Engineer", "Adventurer", "Potato"];
 export default function Hero() {
   return (
     <div className={Main.fullPage}>
-      <div className="h-5/6">
+      <div className="h-5/6 md:h-full">
         <div className="h-5/6 flex flex-col justify-center md:flex-row">
           {/* Text container */}
           <div className="flex flex-col justify-center md:pr-4 md:w-1/3">

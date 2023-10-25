@@ -21,7 +21,7 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
       id={titleID}
       className="h-screen min-h-screen flex flex-col snap-start"
     >
-      <div className="h-2/3">
+      <div className="h-2/3 md:h-5/6">
         <h1 className={Main.h1 + "pt-14 md:pl-20"}>
           Latest <span className="capitalize ">{type}</span>
         </h1>
