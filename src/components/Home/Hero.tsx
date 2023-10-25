@@ -57,14 +57,14 @@ export default function Hero() {
             More about me
           </MotionButton>
         </div>
-        <MotionButton
-          clickable
-          className={Main.p + "flex justify-center pb-10"}
-          href="#latestProject"
-        >
-          Check out my latest work
-        </MotionButton>
       </div>
+      <MotionButton
+        clickable
+        className={Main.p + "flex justify-center pb-10"}
+        href="#latestProject"
+      >
+        Check out my latest work
+      </MotionButton>
     </div>
   );
 }
