@@ -24,7 +24,7 @@ export default function Introduction() {
             ))}
           </div>
           <p className={Main.p + "pt-2"}>
-            currently tinkering my way to a better tomorrow.
+            currently tinkering towards a better tomorrow.
           </p>
           <br></br>
           <p className={Main.subp}>
