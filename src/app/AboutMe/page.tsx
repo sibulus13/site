@@ -7,7 +7,7 @@ import MotionButton from "@/components/motion/MotionButton";
 
 export default function Aboutme() {
   return (
-    <div className="flex flex-col justify-center pt-10">
+    <div className="flex flex-col justify-center">
       <h1 className={Main.h1}>About Me | 我</h1>
       <br></br>
       <h1 className={Main.h2}>Professional Summary</h1>

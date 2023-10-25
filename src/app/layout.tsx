@@ -21,7 +21,7 @@ export default function RootLayout({
       </head>
       <body>
         <NavBar></NavBar>
-        <div className="px-4 pt-4">{children}</div>
+        <div className="px-4 pt-14">{children}</div>
         <Analytics />
       </body>
     </html>

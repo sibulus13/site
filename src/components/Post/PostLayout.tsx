@@ -14,7 +14,7 @@ export default async function PostLayout(props: any) {
   return (
     <div>
       <div className={Main.fullPage}>
-        <div className="pt-10">
+        <div>
           <h1 className={Main.h1}>{ title }</h1>
           <div className="py-12 gap-y-28 flex flex-col">
             {posts.map((post, index) => (
