@@ -9,8 +9,8 @@ const titles = ["Software Engineer", "Adventurer", "Potato"];
 
 export default function Hero() {
   return (
-    <div className={Main.fullPage + "h-[70vh]"}>
-      <div className="grow flex flex-col justify-center md:flex-row">
+    <div className={Main.fullPage}>
+      <div className="h-5/6 flex flex-col justify-center md:flex-row">
         {/* Text container */}
         <div className="flex flex-col justify-center md:pr-4 md:w-1/3">
           <h1 className={Main.h1}>
