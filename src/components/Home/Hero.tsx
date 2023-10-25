@@ -30,13 +30,11 @@ export default function Hero() {
           <p className={Main.p + "pt-2"}>
             currently tinkering towards a better tomorrow.
           </p>
-          <br></br>
-          <p className={Main.subp}>
+          <p className={Main.subp + 'py-4'}>
             As a Software Engineer armed with the power of technology to fight
             for a better world, I am passionate about improving life through
             data driven optimization.
           </p>
-          <br></br>
         </div>
         {/* Image Container */}
         <div className="flex flex-col justify-center h-1/2 md:h-full md:w-1/3">
