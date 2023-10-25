@@ -11,6 +11,32 @@ import {
 import { Metadata } from "next";
 import * as Main from "@/style/main";
 
+export default async function Home() {
+  return (
+    <div>
+      <Introduction></Introduction>
+      <div className="h-44"></div>
+      <Latest
+        type="projects"
+        CTA={projectCTA}
+        titleID="latestProject"
+        hrefMore={"/Projects"}
+      ></Latest>
+      <div className="h-44"></div>
+      <Latest
+        type="adventure"
+        CTA={adventureCTA}
+        titleID="latestAdventure"
+        hrefMore={"/Adventures"}
+      ></Latest>
+    </div>
+  );
+}
+
+export const metadata: Metadata = {
+  title: "黄 | Home",
+};
+
 const adventureCTA = (
   <div className={Main.p + "mx-auto align-text-bottom pb-8 pt-8"}>
     Lets develop the future together
@@ -38,29 +64,3 @@ const projectCTA = (
     <BiDownArrow className="text-3xl"></BiDownArrow>
   </Link>
 );
-
-export default async function Home() {
-  return (
-    <div className="pt-4">
-      <Introduction></Introduction>
-      <div className="h-44"></div>
-      <Latest
-        type="projects"
-        CTA={projectCTA}
-        titleID="latestProject"
-        hrefMore={"/Projects"}
-      ></Latest>
-      <div className="h-44"></div>
-      <Latest
-        type="adventure"
-        CTA={adventureCTA}
-        titleID="latestAdventure"
-        hrefMore={"/Adventures"}
-      ></Latest>
-    </div>
-  );
-}
-
-export const metadata: Metadata = {
-  title: "黄 | Home",
-};
