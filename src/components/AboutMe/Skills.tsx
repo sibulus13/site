@@ -39,13 +39,11 @@ import {
 const saveAs = require("file-saver");
 import listRenderer from "../generic/listRenderer";
 import * as Main from "@/style/main";
+import MotionButton from "../motion/MotionButton";
 
 export default function Skills() {
   const saveResume = () => {
-    saveAs(
-      "profile/Michael Huang Resume.pdf",
-      "Michael_Huang_resume.pdf"
-    );
+    saveAs("profile/Michael Huang Resume.pdf", "Michael_Huang_resume.pdf");
   };
 
   return (
@@ -74,12 +72,13 @@ export default function Skills() {
         {listRenderer(tools)}
       </div>
 
-      <Link
-        className={Main.p + "flex justify-center underline my-12"}
+      <MotionButton
+        clickable
+        className={Main.p + "flex justify-center my-12"}
         href="/Projects"
       >
-        {">"} See my most recent projects {"<"}
-      </Link>
+        See my most recent projects
+      </MotionButton>
     </div>
   );
 }

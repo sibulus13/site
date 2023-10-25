@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import Skills from "@/components/AboutMe/Skills";
 import * as Main from "@/style/main";
+import MotionButton from "@/components/motion/MotionButton";
 
 export default function Aboutme() {
   return (
@@ -32,12 +33,13 @@ export default function Aboutme() {
           summer, or snowboarding in the winter with a cozy bowl of ramen to end
           off my day.
         </p>
-        <Link
-          className={Main.p + "flex justify-center underline my-12"}
+        <MotionButton
+          clickable
+          className={Main.p + "flex justify-center my-12"}
           href="/Adventures"
         >
-          {">"} See my most recent adventures {"<"}
-        </Link>
+          See my most recent adventures
+        </MotionButton>
       </div>
     </div>
   );
