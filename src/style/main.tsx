@@ -10,7 +10,7 @@ export const h2 = "text-3xl md:text-4xl ";
 
 export const date = secondaryColor + " ";
 
-export const p = accentColor + "text-xl md:text-2xl ";
+export const p = accentColor + "text-xl md:text-2xl p-1";
 
 export const subp = "text-lg md:text-xl ";
 
