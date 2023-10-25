@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { Metadata } from "next";
 import Skills from "@/components/AboutMe/Skills";
 import * as Main from "@/style/main";

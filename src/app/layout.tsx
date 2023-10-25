@@ -3,11 +3,6 @@ import NavBar from "../components/generic/NavBar";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 
-type Props = {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-
 export default function RootLayout({
   children,
 }: {

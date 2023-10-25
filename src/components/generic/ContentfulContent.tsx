@@ -4,7 +4,7 @@ import { options } from "@/helpers/contentful";
 import { getPostContent } from "@/helpers/contentful";
 import * as Main from "@/style/main";
 
-export default async function ContentfulContent({ id }) {
+export default async function ContentfulContent({ id }: { id: string }) {
   const res = await getPostContent(id);
   const { title, description, content } = res.fields as {
     title: string;

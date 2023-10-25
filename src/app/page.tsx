@@ -1,12 +1,10 @@
 import Hero from "@/components/Home/Hero";
 import Latest from "@/components/Home/Latest";
-import Link from "next/link";
 import MotionButton from "@/components/motion/MotionButton";
 import {
   BiLogoLinkedin,
   BiLogoGithub,
   BiLogoGmail,
-  BiDownArrow,
 } from "react-icons/bi";
 import { Metadata } from "next";
 import * as Main from "@/style/main";

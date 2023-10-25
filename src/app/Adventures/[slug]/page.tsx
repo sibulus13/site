@@ -1,4 +1,3 @@
-import type { Document } from "@contentful/rich-text-types";
 import { getPostContent } from "@/helpers/contentful";
 import type { Metadata, ResolvingMetadata } from "next";
 import ContentfulContent from "@/components/generic/ContentfulContent";

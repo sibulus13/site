@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { BiDownArrow } from "react-icons/bi";
 import * as Main from "../../style/main";
 import MotionButton from "../motion/MotionButton";
 import cat_typing_img from "../../../public/profile/cat_typing.gif";
