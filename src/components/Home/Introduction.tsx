@@ -14,7 +14,7 @@ export default function Introduction() {
         {/* Text container */}
         <div className="flex flex-col justify-center md:pr-4 md:w-1/3">
           <h1 className={Main.h1}>
-            Hi, I am <span className={Main.mainGradient}>Michael</span>,
+            Hi, I am <span className='bg-gradient-to-r from-gray-300 to-purple-400 inline-block text-transparent bg-clip-text'>Michael</span>,
           </h1>
           <div className="flex text-xs gap-2 pt-1 md:pt-2">
             {titles.map((title, index) => (

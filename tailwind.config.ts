@@ -31,6 +31,9 @@ const config: Config = {
       },
     },
   },
+  safelist: [
+    'text-cyan-500',
+  ],
   plugins: [],
 }
 export default config
