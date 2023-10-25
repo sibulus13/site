@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiDownArrow } from "react-icons/bi";
 import * as Main from "../../style/main";
-
+import MotionButton from "../motion/MotionButton";
 import cat_typing_img from "../../../public/profile/cat_typing.gif";
 
 const titles = ["Software Engineer", "Adventurer", "Potato"];
@@ -49,23 +49,21 @@ export default function Hero() {
             ></Image>
           </div>
           <br></br>
-          <Link
+          <MotionButton
             href="/AboutMe"
-            className={
-              Main.p + "flex justify-end underline py-4 md:justify-center"
-            }
+            clickable
+            className={Main.p + "flex justify-end py-4 md:justify-center"}
           >
             More about me
-          </Link>
+          </MotionButton>
         </div>
-        <Link
-          className={Main.p + "flex justify-center underline pb-10"}
+        <MotionButton
+          clickable
+          className={Main.p + "flex justify-center pb-10"}
           href="#latestProject"
         >
-          <BiDownArrow className="text-3xl"></BiDownArrow>
           Check out my latest work
-          <BiDownArrow className="text-3xl"></BiDownArrow>
-        </Link>
+        </MotionButton>
       </div>
     </div>
   );

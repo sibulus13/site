@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getBlogPosts } from "@/helpers/contentful";
 import * as Main from "../../style/main";
+import MotionButton from "../motion/MotionButton";
 
 export default async function Latest({ type, CTA, hrefMore, titleID }) {
   const posts = await getBlogPosts(type);
@@ -50,10 +51,12 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
           </div>
         </Link>
         <div>
-          <Link className={Main.p+"flex justify-end underline pb-8"} href={hrefMore}>
-            More {type}
-            {type[type.length - 1] === "s" ? "" : "s"}
-          </Link>
+          <MotionButton clickable className={Main.p + "flex justify-end pb-8"} href={hrefMore}>
+            <span>
+              More {type}
+              {type[type.length - 1] === "s" ? "" : "s"}
+            </span>
+          </MotionButton>
         </div>
         {CTA}
       </div>

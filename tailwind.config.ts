@@ -34,6 +34,11 @@ const config: Config = {
   safelist: [
     'text-purple-200',
     'text-cyan-500',
+    'text-slate-300',
+    'bg-gray-950',
+    'rounded-3xl',
+    'p-1',
+    'px-3',
   ],
   plugins: [],
 }
