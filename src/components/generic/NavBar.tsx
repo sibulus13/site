@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <div
       className={
-        Main.subp + "fixed w-screen z-10 p-2 border-b-2 bg-black pr-6 md:px-24"
+        Main.subp + "fixed w-full z-10 p-2 border-b-2 bg-black pr-6 md:px-24"
       }
     >
       <div className="flex justify-between">
