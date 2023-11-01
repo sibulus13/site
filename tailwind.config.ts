@@ -7,7 +7,14 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
+      extend: {
+        colors: {
+          my_color: '#4dcb7a',
+      },
+      gradientColorStopPositions: {
+        42: '42%',
+        69: '69%',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,6 +22,18 @@ const config: Config = {
       },
     },
   },
+  safelist: [
+    'text-purple-200',
+    'text-violet-300',
+    'text-slate-300',
+    'bg-gray-950',
+    'rounded-3xl',
+    'p-1',
+    'px-3',
+    'pt-6',
+    'pb-1',
+    'border-2'
+  ],
   plugins: [],
 }
 export default config

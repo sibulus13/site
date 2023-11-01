@@ -3,11 +3,6 @@ import NavBar from "../components/generic/NavBar";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 
-type Props = {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -19,12 +14,10 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>
-        <div>
-          <NavBar></NavBar>
-          <div className="px-4">{children}</div>
-          <Analytics />
-        </div>
+      <body className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] to-black from-slate-950">
+        <NavBar></NavBar>
+        <div className="px-4 pt-14">{children}</div>
+        <Analytics />
       </body>
     </html>
   );
@@ -32,7 +25,7 @@ export default function RootLayout({
 
 export const metadata: Metadata = {
   title: {
-    template: '黄 | %s',
-    default: '黄',
+    template: "%s",
+    default: "",
   },
 };

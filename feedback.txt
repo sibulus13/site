@@ -1,0 +1,6 @@
+Andy
+- Larger font, less words for user scanning
+- Separate front pg personal intro/story for attentativeness
+- Zoom for pictures if static sized
+- Tell personal specialty/strength
+- Hover/active/click states for interactivity, 

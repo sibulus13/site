@@ -1,0 +1,7 @@
+- Add tags to posts
+- Modal for full pg image click ins
+- Relocate content pg back btn
+
+# Bugs
+- Why does Adventure pg have a scrollable right margin?
+- Going to Adventure pg does not go to top of pg

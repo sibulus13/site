@@ -38,47 +38,44 @@ import {
 
 const saveAs = require("file-saver");
 import listRenderer from "../generic/listRenderer";
+import * as Main from "@/style/main";
+import MotionButton from "../motion/MotionButton";
 
 export default function Skills() {
   const saveResume = () => {
-    saveAs(
-      "publicprofileMichael Huang Resume.pdf.pdf",
-      "Michael_Huang_resume.pdf"
-    );
+    saveAs("profile/Michael Huang Resume.pdf", "Michael_Huang_resume.pdf");
   };
 
   return (
     <div id="skills" className="flex flex-col">
       <div className="grow">
-        <h1 className="text-3xl">Skills</h1>
-        <p>
-          Over the years I have gained experience utilizing a variety of languages,
-          frameworks, and tools, some of which are listed here. Learn more about
-          my skills and experiences through my{" "}
+        <h1 className={Main.h2}>Skills</h1>
+        <p className={Main.p}>
+          Over the years I have gained experience utilizing a variety of
+          languages, frameworks, and tools, some of which are listed here. Learn
+          more about my skills and experiences through my{" "}
           <a className="underline" onClick={saveResume}>
             resume
           </a>
           .
         </p>
-        <br></br>
-        <div className="pt-10"></div>
-
-        <h2 className="text-xl">Languages</h2>
+        <h2 className={Main.h2}>Languages</h2>
         {listRenderer(languages)}
 
-        <h2 className="text-xl">Frameworks</h2>
+        <h2 className={Main.h2}>Frameworks</h2>
         {listRenderer(frameworks)}
 
-        <h2 className="text-xl">Tools</h2>
+        <h2 className={Main.h2}>Tools</h2>
         {listRenderer(tools)}
       </div>
 
-      <Link
-        className="flex justify-center underline pt-20 pb-10"
+      <MotionButton
+        clickable
+        className={"flex justify-center my-12"}
         href="/Projects"
       >
-        {">"} Learn more about my most recent projects {"<"}
-      </Link>
+        See my most recent projects
+      </MotionButton>
     </div>
   );
 }

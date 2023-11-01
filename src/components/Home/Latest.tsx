@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getBlogPosts } from "@/helpers/contentful";
+import * as Main from "../../style/main";
+import MotionButton from "../motion/MotionButton";
 
 export default async function Latest({ type, CTA, hrefMore, titleID }) {
   const posts = await getBlogPosts(type);
@@ -19,32 +21,50 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
       id={titleID}
       className="h-screen min-h-screen flex flex-col snap-start"
     >
-      <h1 className="pt-14 text-3xl md:text-6xl md:pl-20">
-        Latest <span className="capitalize ">{type}</span>
-      </h1>
-      <div className="flex flex-col h-full md:w-1/3 md:mx-auto">
-        <div className="grow m-2 p-2 flex flex-col">
-          <div className="relative h-1/2 grow">
-            <Image
-              src={"https:" + url}
-              alt={title}
-              fill
-              className="object-cover border rounded-xl"
-            ></Image>
-          </div>
-          <div className="pt-4">
-            <h2>{title}</h2>
-            <p className="text-right">{new Date(date).toDateString()}</p>
-            <p>{description}</p>
-          </div>
-        </div>
-        <div>
-          <Link className="flex justify-end underline pb-8" href={hrefMore}>
-            More {type}
-            {type[type.length - 1] === "s" ? "" : "s"}
+      <div className="h-2/3 md:h-5/6">
+        <h1 className={Main.h1 + "pt-14 md:pl-20"}>
+          Latest <span className="capitalize ">{type}</span>
+        </h1>
+        <div className="flex flex-col h-full md:w-1/3 md:mx-auto">
+          <Link
+            className="grow m-2 p-2 flex flex-col"
+            href={{
+              pathname: `${hrefMore}/` + title,
+              query: {
+                id: id,
+              },
+            }}
+          >
+            <div className="relative h-1/2 grow">
+              <Image
+                src={"https:" + url}
+                alt={title}
+                fill
+                className="object-cover border rounded-xl"
+              ></Image>
+            </div>
+            <div className="pt-4">
+              <h2 className={Main.h2}>{title}</h2>
+              <p className={Main.date + "text-right"}>
+                {new Date(date).toDateString()}
+              </p>
+              <p className={Main.p}>{description}</p>
+            </div>
           </Link>
+          <div>
+            <MotionButton
+              clickable
+              className={"flex justify-end pb-8"}
+              href={hrefMore}
+            >
+              <span>
+                More {type}
+                {type[type.length - 1] === "s" ? "" : "s"}
+              </span>
+            </MotionButton>
+          </div>
+          {CTA}
         </div>
-        {CTA}
       </div>
     </div>
   );

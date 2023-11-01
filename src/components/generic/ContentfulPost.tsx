@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import * as Main from "@/style/main";
 
 export default function ContentfulPost(props: any) {
   const { content, value, parentPath } = props;
@@ -38,12 +39,12 @@ export default function ContentfulPost(props: any) {
         </div>
         {/* Text container */}
         <div className="w-64 px-4 even:pr-6 odd:pl-6">
-          <h2 className="text-xl">{title}</h2>
-          <p className="text-right whitespace-nowrap text-sm">
+          <h2 className={Main.h2}>{title}</h2>
+          <p className={Main.date + "text-right whitespace-nowrap"}>
             {new Date(date).toDateString()}
           </p>
           <div className="border mb-1"></div>
-          <p className="">{description}</p>
+          <p className={Main.p}>{description}</p>
         </div>
       </Link>
     </motion.div>

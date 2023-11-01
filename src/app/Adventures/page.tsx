@@ -1,19 +1,18 @@
 import PostLayout from "@/components/Post/PostLayout";
-import Head from "next/head";
+import { Metadata } from "next";
 
 export default async function Adventures() {
   return (
-    <>
-      <Head>
-        <title>Adventures</title>
-        <meta name="description" content="Adventures" />
-        <link rel="icon" href="/lastName.png" />
-      </Head>
       <PostLayout
-        title="Adventure"
+        title="Adventure | 冒险"
         parentPath="Adventures"
         blogType="adventure"
       ></PostLayout>
-    </>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Adventures",
+  description:
+    "A list of my most recent adventures",
+};
