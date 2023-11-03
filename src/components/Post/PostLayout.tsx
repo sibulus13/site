@@ -16,7 +16,7 @@ export default async function PostLayout(props: any) {
       <div className={Main.fullPage}>
         <div>
           <h1 className={Main.h1}>{ title }</h1>
-          <div className="py-12 gap-y-28 flex flex-col">
+          <div className="py-12 gap-y-28 flex flex-col overflow-hidden">
             {posts.map((post, index) => (
               <ContentfulPost
                 key={index}
