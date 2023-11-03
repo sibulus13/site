@@ -29,7 +29,8 @@ export default function ContentfulPost(props: any) {
         className="flex group-even:flex-row-reverse justify-center"
       >
         {/* Img container */}
-        <div className="relative h-64 w-64">
+        {/* h-64 w-64 */}
+        <div className="relative aspect-square w-1/2 md:w-1/3 lg:w-1/4">
           <Image
             src={"https:" + url}
             alt={title}
