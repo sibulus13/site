@@ -13,10 +13,12 @@ export default async function ContentfulContent({ id }: { id: string }) {
   };
 
   return (
-    <div className="py-14">
-      <BackButton></BackButton>
+    <div>
       <div className="px-10 lg:w-1/2 mx-auto">
-        <h1 className={Main.h1}>{title}</h1>
+        <div className="flex justify-between">
+          <h1 className={Main.h1}>{title}</h1>
+          <BackButton></BackButton>
+        </div>
         <h3 className={Main.p}>{description}</h3>
         <div className="border-b-2 border-white"></div>
         <div>{documentToReactComponents(content, options)}</div>

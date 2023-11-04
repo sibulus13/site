@@ -1,6 +1,4 @@
-- Add tags to posts
 - Modal for full pg image click ins
-- Relocate content pg back btn
 - Make title section of posts sticky
 
 # Bugs
