@@ -35,7 +35,7 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
               },
             }}
           >
-            <div className="relative h-1/2 grow">
+            <div className="mx-auto relative w-1/2 aspect-square grow">
               <Image
                 src={"https:" + url}
                 alt={title}

@@ -13,14 +13,14 @@ export default async function Home() {
   return (
     <div>
       <Hero></Hero>
-      <div className="h-44"></div>
+      <div className="h-20"></div>
       <Latest
         type="projects"
         CTA={adventureCTA}
         titleID="latestProject"
         hrefMore={"/Projects"}
       ></Latest>
-      <div className="h-44"></div>
+      <div className="h-20"></div>
       <Latest
         type="adventure"
         CTA={contactCTA}
