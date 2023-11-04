@@ -8,14 +8,14 @@ export default async function PostLayout(props: any) {
   const posts: any = await getBlogPosts(blogType);
   // sort posts by date
   posts.sort((a: any, b: any) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
+    return new Date(b.fields.date).getTime() - new Date(a.fields.date).getTime();
   });
 
   return (
     <div>
       <div className={Main.fullPage}>
         <div>
-          <h1 className={Main.h1}>{ title }</h1>
+          <h1 className={Main.h1}>{title}</h1>
           <div className="py-12 gap-y-28 flex flex-col overflow-hidden">
             {posts.map((post, index) => (
               <ContentfulPost
