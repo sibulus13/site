@@ -84,7 +84,7 @@ export const options = {
       </div>
     ),
     [INLINES.HYPERLINK]: (node: any, children: any) => (
-      <p className={Main.subp + "underline"}>{children}</p>
+      <span className="underline">{children}</span>
     ),
   },
 };
