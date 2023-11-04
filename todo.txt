@@ -4,4 +4,3 @@
 - Make title section of posts sticky
 
 # Bugs
-- Going to Adventure pg does not go to top of pg
