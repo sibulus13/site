@@ -32,7 +32,10 @@ const config: Config = {
     'px-3',
     'pt-6',
     'pb-1',
-    'border-2'
+    'border-2',
+    'text-lg',
+    'text-xl',
+    'text-white',
   ],
   plugins: [],
 }
