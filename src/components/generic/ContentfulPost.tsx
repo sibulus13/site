@@ -10,6 +10,7 @@ export default function ContentfulPost(props: any) {
   const { title, description, thumbnail, date } = content.fields;
   const { id } = content.sys;
   const { url, title: alt } = thumbnail.fields.file;
+  const tags = content.fields.tags ?? [];
 
   return (
     <motion.div
@@ -45,6 +46,14 @@ export default function ContentfulPost(props: any) {
             {new Date(date).toDateString()}
           </p>
           <div className="border mb-1"></div>
+          <div className="flex flex-wrap text-xs gap-2">
+            {tags.map((tag, index) => (
+              <div key={index} className="border rounded px-1 whitespace-nowrap">
+                {tag}
+              </div>
+            ))}
+          </div>
+
           <p className={Main.p}>{description}</p>
         </div>
       </Link>
