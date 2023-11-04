@@ -12,9 +12,9 @@ export const date = secondaryColor + " ";
 
 export const p = accentColor + "text-xl md:text-2xl p-1 ";
 
-export const subp = "text-lg md:text-xl ";
+export const subp = " text-lg md:text-xl ";
 
-export const fullPage = "min-h-screen flex flex-col ";
+export const fullPage = "h-screen flex flex-col ";
 
 export const clickable = 'rounded-3xl border-2 border-white p-1 px-3 bg-gray-950 ';
 
