@@ -1,6 +1,6 @@
 import { createClient } from "contentful";
 import { env } from "process";
-import { BLOCKS, MARKS } from "@contentful/rich-text-types";
+import { BLOCKS, MARKS, INLINES } from "@contentful/rich-text-types";
 import Image from "next/image";
 import "../app/globals.css";
 
@@ -31,21 +31,19 @@ export const options = {
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node: any, children: any) => (
       <div>
-        <br />
-        <p className="">{children}</p>
+        <p className="pt-1">{children}</p>
       </div>
     ),
     [BLOCKS.HEADING_1]: (node: any, children: any) => (
-      <h1 className={Main.h2 + "pt-8"}>{children}</h1>
+      <h1 className={Main.h2 + "pt-4"}>{children}</h1>
     ),
     [BLOCKS.HEADING_2]: (node: any, children: any) => (
       <div>
-        <br />
         <h2 className="text-2xl pt-4">{children}</h2>
       </div>
     ),
     [BLOCKS.HEADING_3]: (node: any, children: any) => (
-      <h3 className="text-xl">{children}</h3>
+      <h3 className="text-xl pt-4">{children}</h3>
     ),
     [BLOCKS.HEADING_4]: (node: any, children: any) => (
       <h4 className="text-lg">{children}</h4>
@@ -84,6 +82,9 @@ export const options = {
         <p className="flex justify-center">{node.data.target.fields.title}</p>
         <br />
       </div>
+    ),
+    [INLINES.HYPERLINK]: (node: any, children: any) => (
+      <p className={Main.subp + "underline"}>{children}</p>
     ),
   },
 };

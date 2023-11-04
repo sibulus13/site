@@ -35,6 +35,7 @@ const config: Config = {
     'border-2',
     'text-lg',
     'text-xl',
+    'text-2xl',
     'text-white',
   ],
   plugins: [],

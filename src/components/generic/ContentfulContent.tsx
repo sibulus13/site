@@ -13,7 +13,7 @@ export default async function ContentfulContent({ id }: { id: string }) {
   };
 
   return (
-    <div>
+    <div className="pb-8">
       <div className="px-10 lg:w-1/2 mx-auto">
         <div className="flex justify-between">
           <h1 className={Main.h1}>{title}</h1>
