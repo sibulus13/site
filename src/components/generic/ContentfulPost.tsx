@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import * as Main from "@/style/main";
+import { BiLogoGithub } from "react-icons/bi";
 
 export default function ContentfulPost(props: any) {
   const { content, value, parentPath } = props;
@@ -11,7 +12,7 @@ export default function ContentfulPost(props: any) {
   const { id } = content.sys;
   const { url, title: alt } = thumbnail.fields.file;
   const tags = content.fields.tags ?? [];
-
+  const githubLink = content.fields.githubLink ?? null;
   return (
     <motion.div
       initial={{ opacity: 0, translateX: value % 2 === 0 ? -100 : 100 }}
@@ -42,13 +43,24 @@ export default function ContentfulPost(props: any) {
         {/* Text container */}
         <div className="w-64 px-4 even:pr-6 odd:pl-6">
           <h2 className={Main.h2}>{title}</h2>
+          {githubLink && (
+            <Link
+              href={githubLink}
+            >
+              <BiLogoGithub className="text-4xl" />
+            </Link>
+          )}
+
           <p className={Main.date + "text-right whitespace-nowrap"}>
             {new Date(date).toDateString()}
           </p>
           <div className="border mb-1"></div>
           <div className="flex flex-wrap text-xs gap-2">
             {tags.map((tag, index) => (
-              <div key={index} className="border rounded px-1 whitespace-nowrap">
+              <div
+                key={index}
+                className="border rounded px-1 whitespace-nowrap"
+              >
                 {tag}
               </div>
             ))}
