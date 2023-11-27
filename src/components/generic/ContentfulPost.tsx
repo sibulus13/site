@@ -42,15 +42,14 @@ export default function ContentfulPost(props: any) {
         </div>
         {/* Text container */}
         <div className="w-64 px-4 even:pr-6 odd:pl-6">
-          <h2 className={Main.h2}>{title}</h2>
-          {githubLink && (
-            <Link
-              href={githubLink}
-            >
-              <BiLogoGithub className="text-4xl" />
-            </Link>
-          )}
-
+          <div className="flex items-center gap-2 justify-between">
+            <h2 className={Main.h2}>{title}</h2>
+            {githubLink && (
+              <Link href={githubLink}>
+                <BiLogoGithub className="text-4xl mt-6" />
+              </Link>
+            )}
+          </div>
           <p className={Main.date + "text-right whitespace-nowrap"}>
             {new Date(date).toDateString()}
           </p>
