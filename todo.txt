@@ -1,6 +1,5 @@
 # To do
 - Modal for full pg image click ins
 - Make title section of posts sticky
-- Add GitHub link on content
 
 # Bugs
