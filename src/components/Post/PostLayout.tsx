@@ -6,16 +6,11 @@ export default async function PostLayout(props: any) {
   const { title, parentPath, blogType } = props;
 
   let posts: any = await getBlogPosts(blogType);
-  
-  posts = posts.filter((post: any) => {
-    return post.fields.published;
-  });
 
   // sort posts by date
   posts.sort((a: any, b: any) => {
     return new Date(b.fields.date).getTime() - new Date(a.fields.date).getTime();
   });
-
 
   return (
     <div>

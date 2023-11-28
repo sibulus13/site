@@ -3,6 +3,7 @@ import { env } from "process";
 import { BLOCKS, MARKS, INLINES } from "@contentful/rich-text-types";
 import Image from "next/image";
 import "../app/globals.css";
+import Link from "next/link";
 
 import * as Main from "../style/main";
 
@@ -84,7 +85,9 @@ export const options = {
       </div>
     ),
     [INLINES.HYPERLINK]: (node: any, children: any) => (
-      <span className="underline">{children}</span>
+      <Link href={node.data.uri}>
+        <span className="underline">{children}</span>
+      </Link>
     ),
   },
 };
