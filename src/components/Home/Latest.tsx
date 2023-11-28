@@ -6,6 +6,13 @@ import MotionButton from "../motion/MotionButton";
 
 export default async function Latest({ type, CTA, hrefMore, titleID }) {
   const posts = await getBlogPosts(type);
+  
+  posts.sort((a, b) => {
+    const dateA = new Date(a.fields.date);
+    const dateB = new Date(b.fields.date);
+    return dateB.getTime() - dateA.getTime();
+  });
+
   const post = posts[0];
   const { title, description, thumbnail, date } = post.fields as {
     title: string;
