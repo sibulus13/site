@@ -5,7 +5,10 @@ import * as Main from "@/style/main";
 
 export default function MotionButton(props: any) {
   return (
-    <Link href={props.href ?? ""} className={Main.subp + props.className}>
+    <Link
+      href={props.href??'#'}
+      className={Main.subp + props.className}
+    >
       <motion.button
         initial={false}
         whileHover={{ scale: 1.3 }}
