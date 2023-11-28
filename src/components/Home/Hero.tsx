@@ -70,8 +70,8 @@ export default function Hero() {
         </div>
       </div>
       {/* Link Buttons */}
-      <div className={Main.p + "mx-auto align-text-bottom py-1"}>
-        <div className="flex justify-center gap-2 p-4">
+      <div className={Main.p + "mx-auto align-text-bottom"}>
+        <div className="flex justify-center gap-2 p-2">
           <MotionButton clickable onClick={saveResume}>
             <div className="flex gap-1 items-center">
               <GrDocumentPdf></GrDocumentPdf> Resume
