@@ -14,7 +14,7 @@ export default function Hero() {
   };
 
   return (
-    <div className={Main.fullPage}>
+    <div className={Main.fullPage + "h-full"}>
       {/* Intro */}
       <div className="h-5/6 flex flex-col justify-center md:flex-row">
         {/* Text container */}
