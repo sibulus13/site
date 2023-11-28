@@ -17,7 +17,7 @@ export default function ContentfulPost(props: any) {
     <motion.div
       initial={{ opacity: 0, translateX: value % 2 === 0 ? -100 : 100 }}
       whileInView={{ opacity: 1, translateX: 0 }}
-      viewport={{ amount: 0.3 }}
+      viewport={{ amount: 0.2 }}
       transition={{ duration: 0.5 }}
       className="group"
     >
