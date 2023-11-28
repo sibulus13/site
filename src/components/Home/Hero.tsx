@@ -33,15 +33,15 @@ export default function Hero() {
               </p>
             ))}
           </div>
-          <div>
-            <p className={Main.subp}>
+          <div className={Main.p}>
+            <p>
               {">"} 3+ years of Software Engineering Experience.
             </p>
-            <p className={Main.subp}>
+            <p>
               {">"} BAsc Mechatronic Systems Engineering / Computer Science (AI)
               Minor.
             </p>
-            <p className={Main.p + "py-1"}>
+            <p className={Main.subp + "py-1"}>
               Armed with the power of technology to fight for a better world, I
               am passionate about Full Stack development, automation and data
               driven optimization. Join me on my journey to tinker towards a
