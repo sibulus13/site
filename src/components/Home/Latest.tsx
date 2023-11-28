@@ -6,7 +6,7 @@ import MotionButton from "../motion/MotionButton";
 
 export default async function Latest({ type, CTA, hrefMore, titleID }) {
   const posts = await getBlogPosts(type);
-  
+
   posts.sort((a, b) => {
     const dateA = new Date(a.fields.date);
     const dateB = new Date(b.fields.date);
@@ -24,15 +24,12 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
   const { url, title: alt } = thumbnail.fields.file;
 
   return (
-    <div
-      id={titleID}
-      className="h-screen min-h-screen flex flex-col snap-start"
-    >
-      <div className="h-2/3 md:h-5/6">
-        <h1 className={Main.h1 + "pt-14 md:pl-20"}>
+    <div id={titleID} className={Main.fullPage + " snap-start"}>
+      <div className="h-5/6">
+        <h1 className={Main.h1 + "pt-14 md:pl-20 text-center md:text-left"}>
           Latest <span className="capitalize ">{type}</span>
         </h1>
-        <div className="flex flex-col h-full md:w-1/3 md:mx-auto">
+        <div className="flex flex-col h-5/6 md:w-1/3 md:mx-auto">
           <Link
             className="grow m-2 p-2 flex flex-col"
             href={{
@@ -70,9 +67,9 @@ export default async function Latest({ type, CTA, hrefMore, titleID }) {
               </span>
             </MotionButton>
           </div>
-          {CTA}
         </div>
       </div>
+      {CTA}
     </div>
   );
 }
