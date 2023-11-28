@@ -37,6 +37,9 @@ const config: Config = {
     'text-xl',
     'text-2xl',
     'text-white',
+    'h-screen',
+    'flex',
+    'flex-col',
   ],
   plugins: [],
 }
