@@ -1,14 +1,21 @@
+"use client";
 import Image from "next/image";
 import * as Main from "../../style/main";
 import MotionButton from "../motion/MotionButton";
 import cat_typing_img from "../../../public/profile/cat_typing.gif";
-
+import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
+import { GrDocumentPdf } from "react-icons/gr";
+const saveAs = require("file-saver");
 const titles = ["Software Engineer", "Adventurer", "Potato"];
 
 export default function Hero() {
+  const saveResume = () => {
+    saveAs("profile/Michael Huang Resume.pdf", "Michael_Huang_resume.pdf");
+  };
+
   return (
     <div className={Main.fullPage}>
-      <div className="h-5/6 md:h-full">
+      <div className="h-5/6 md:h-5/6">
         <div className="h-5/6 flex flex-col justify-center md:flex-row">
           {/* Text container */}
           <div className="flex flex-col justify-center md:pr-4 md:w-1/3">
@@ -29,14 +36,25 @@ export default function Hero() {
                 </p>
               ))}
             </div>
-            <p className={Main.p + "pt-2"}>
-              currently tinkering towards a better tomorrow.
-            </p>
-            <p className={Main.subp + "py-4"}>
-              As a Software Engineer armed with the power of technology to fight
-              for a better world, I am passionate about improving life through
-              data driven optimization.
-            </p>
+            <div>
+              <p className={Main.p + "pt-2"}>
+                currently tinkering towards a better tomorrow.
+              </p>
+              <p className={Main.subp}>
+                {" "}
+                {">"} 3+ years of Software Engineering Experience.
+              </p>
+              <p className={Main.subp}>
+                {" "}
+                {">"} BAsc Mechatronic Systems Engineering / Computer Science
+                (AI) Minor.
+              </p>
+              <p className={Main.subp + "py-4"}>
+                Armed with the power of technology to fight for a better world,
+                I am passionate about Full Stack development, automation and
+                data driven optimization.
+              </p>
+            </div>
           </div>
           {/* Image Container */}
           <div className="flex flex-col justify-center h-1/2 md:h-full md:w-1/3">
@@ -52,9 +70,38 @@ export default function Hero() {
             <MotionButton
               href="/AboutMe"
               clickable
-              className={"flex justify-end py-4 md:justify-center"}
+              className={"flex justify-end py-1 md:justify-center"}
             >
               More about me
+            </MotionButton>
+          </div>
+        </div>
+        {/* Link Buttons */}
+        <div className={Main.p + "mx-auto align-text-bottom py-1"}>
+          <div className="flex justify-center gap-2 p-4">
+            <MotionButton clickable onClick={saveResume}>
+              <div className="flex gap-1 items-center">
+                <GrDocumentPdf></GrDocumentPdf> Resume
+              </div>
+            </MotionButton>
+            <MotionButton
+              clickable
+              href="https://www.linkedin.com/in/sibulus0/"
+            >
+              <div className="flex gap-1 items-center">
+                <BiLogoLinkedin></BiLogoLinkedin>
+                LinkedIn
+              </div>
+            </MotionButton>
+            <MotionButton
+              clickable
+              href="https://github.com/sibulus13"
+              className="text-3xl"
+            >
+              <div className="flex gap-1 items-center">
+                <BiLogoGithub></BiLogoGithub>
+                GitHub
+              </div>
             </MotionButton>
           </div>
         </div>
