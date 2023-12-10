@@ -1,6 +1,7 @@
 import "./globals.css";
 import NavBar from "../components/generic/NavBar";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Metadata } from "next";
 
 export default function RootLayout({
@@ -18,6 +19,7 @@ export default function RootLayout({
         <NavBar></NavBar>
         <div className="px-4 pt-14">{children}</div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
