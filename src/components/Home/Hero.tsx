@@ -2,7 +2,7 @@
 import Image from "next/image";
 import * as Main from "../../style/main";
 import MotionButton from "../motion/MotionButton";
-import cat_typing_img from "../../../public/profile/cat_typing.gif";
+import face_shot from "p/profile/face shot.jpg";
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 import { GrDocumentPdf } from "react-icons/gr";
 const saveAs = require("file-saver");
@@ -53,8 +53,8 @@ export default function Hero() {
         <div className="flex flex-col justify-center h-1/2 md:h-full md:w-1/3">
           <div className="relative h-full md:h-2/3">
             <Image
-              src={cat_typing_img}
-              alt="cat typing"
+              src={face_shot}
+              alt="Face Shot of Michael Huang"
               fill
               className="object-contain rounded-b-full"
             ></Image>
