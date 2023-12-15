@@ -56,7 +56,7 @@ export default function Hero() {
               src={face_shot}
               alt="Face Shot of Michael Huang"
               fill
-              className="object-contain rounded-b-full"
+              className="object-contain rounded-b-full rounded-t-3xl"
             ></Image>
           </div>
           <br></br>
