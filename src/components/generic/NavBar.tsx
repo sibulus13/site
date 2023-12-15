@@ -16,7 +16,7 @@ export default function NavBar() {
     >
       <div className="flex justify-between">
         <MotionButton href="/" className="">
-          <h1>家 | Home</h1>
+          <h1>Home | 家</h1>
         </MotionButton>
         <div className="flex justify-right gap-4 md:gap-10">
           {items.map((item, index) => (
