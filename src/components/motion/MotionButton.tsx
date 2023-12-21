@@ -11,8 +11,8 @@ export default function MotionButton(props: any) {
     >
       <motion.button
         initial={false}
-        whileHover={{ scale: 1.3 }}
-        whileTap={{ scale: [1.3, 1] }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: [1.1, 1] }}
         className={props.clickable ? Main.clickable : ""}
         onClick={props.onClick ?? ((e) => {})}
       >
