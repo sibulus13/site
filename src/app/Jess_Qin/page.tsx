@@ -29,19 +29,27 @@ export default function JessieQin() {
             />
           </motion.div>
         </div>
-        
+
         {/* Catcall Container */}
         <div>
-          <h1 className={Main.h1}>Jess Qin</h1>
+          <h1 className={Main.h1}>{title}</h1>
           <h2 className={Main.p}>
-            Are you a magician, or did my cats just cast a spell on me?
-            <br></br>
-            <br></br>
-            Because whenever I&apos;m around you, it feels like a purr-fectly
-            enchanting moment!
+            {/* iterate over each line of catcall */}
+            {catcall.map((line, key) => (
+              <p key={key} className={Main.p}>
+                {line}
+              </p>
+            ))}
           </h2>
         </div>
       </div>
     </div>
   );
 }
+
+const title = "Jess Qin";
+
+const catcall = [
+  "Are you a magician, or did my cats just cast a spell on me?",
+  "Because whenever I&apos;m around you, it feels like a purr-fectly enchanting moment!",
+];
