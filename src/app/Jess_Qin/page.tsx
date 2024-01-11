@@ -36,7 +36,7 @@ export default function JessieQin() {
             Are you a magician, or did my cats just cast a spell on me?
             <br></br>
             <br></br>
-            Because whenever I'm around you, it feels like a purr-fectly
+            Because whenever I&apos;m around you, it feels like a purr-fectly
             enchanting moment!
           </h2>
         </div>
