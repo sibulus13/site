@@ -51,5 +51,5 @@ const title = "Jess Qin";
 
 const catcall = [
   "Are you a magician, or did my cats just cast a spell on me?",
-  "Because whenever I&apos;m around you, it feels like a purr-fectly enchanting moment!",
+  "Because whenever I'm around you, it feels like a purr-fectly enchanting moment!",
 ];
