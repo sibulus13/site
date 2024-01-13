@@ -8,12 +8,12 @@ export default function ContentfulProfile({ title, description, url, alt }) {
   return (
     <div
       className={
-        "overflow-hidden pt-20 w-5/6 gap-4 mx-auto flex flex-col items-center"
+        "overflow-hidden pt-20 w-5/6 h-full gap-10 mx-auto flex flex-col items-center"
       }
     >
       {/* Image Container */}
       <motion.div
-        className="aspect-square relative w-3/4"
+        className="aspect-square relative w-5/6 md:w-1/3"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{
           opacity: 1,
@@ -23,7 +23,12 @@ export default function ContentfulProfile({ title, description, url, alt }) {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: [1.1, 1] }}
       >
-        <Image src={"https:" + url} alt={alt} fill className="rounded-tl-full rounded-br-full object-contain"/>
+        <Image
+          src={"https:" + url}
+          alt={alt}
+          fill
+          className="rounded-tl-full rounded-br-full object-contain"
+        />
       </motion.div>
 
       {/* Text Container */}
