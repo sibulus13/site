@@ -25,6 +25,18 @@ export const getPostContent = async (id: string) => {
   return response;
 };
 
+// Retrieve the list of blog posts from Contentful
+export const getContentByTitle = async (
+  content_type: string,
+  field_title: string
+) => {
+  const response = await client.getEntries({
+    content_type: content_type,
+    "fields.title": field_title,
+  });
+  return response.items[0];
+};
+
 export const options = {
   renderMark: {
     [MARKS.BOLD]: (text: any) => <b>{text}</b>,
