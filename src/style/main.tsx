@@ -16,7 +16,7 @@ export const subp = " text-lg md:text-xl ";
 
 export const fullPage = " flex flex-col h-screen ";
 
-export const clickable = 'rounded-3xl border-2 border-white p-1 px-3 bg-gray-950 text-white ';
+export const clickable = 'rounded-3xl border-b-2 border-white p-1 px-3 bg-gray-950 text-white ';
 
 export const mainGradient =
   "bg-gradient-to-r from-gray-300 to-purple-400 inline-block text-transparent bg-clip-text ";
