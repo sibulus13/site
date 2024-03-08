@@ -13,28 +13,30 @@ const layout = ["bathrooms on both floors", "smoking area in the backyard"];
 
 export default async function House_Rules_Page() {
   return (
-    <div>
+    <div className={Main.fullPage}>
       <h1 className={Main.h1}>Welcome</h1>
-      <h2 className={Main.h2}>Layout</h2>
-      <ul>
-        {layout.map((rule, index) => {
-          return (
-            <li key={index} className={Main.p}>
-              {rule}
-            </li>
-          );
-        })}
-      </ul>
-      <h2 className={Main.h2}>Rules</h2>
-      <ul>
-        {rules.map((rule, index) => {
-          return (
-            <li key={index} className={Main.p}>
-              {rule}
-            </li>
-          );
-        })}
-      </ul>
+      <div>
+        <h2 className={Main.h2}>Layout</h2>
+        <ul>
+          {layout.map((rule, index) => {
+            return (
+              <li key={index} className={Main.p}>
+                {rule}
+              </li>
+            );
+          })}
+        </ul>
+        <h2 className={Main.h2}>Rules</h2>
+        <ul>
+          {rules.map((rule, index) => {
+            return (
+              <li key={index} className={Main.p}>
+                {rule}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 }
