@@ -7,9 +7,9 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-      extend: {
-        colors: {
-          my_color: '#4dcb7a',
+    extend: {
+      colors: {
+        my_color: '#4dcb7a',
       },
       gradientColorStopPositions: {
         42: '42%',
