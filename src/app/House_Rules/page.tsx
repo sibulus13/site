@@ -4,12 +4,20 @@ import * as Main from "@/style/main";
 const rules = [
   "No shoes in the house",
   "Indoor sandals for downstair wood floors only",
+  "Help yourself to the snacks and drinks",
   "No smoking in the house",
   "Respectful volume after 1030pm",
   "1/2 shot or 1/4 toke per non-DD guest upon entry",
+  "Clean up after yourself",
+  "Plenty of places to crash, just let me know ahead of time",
 ];
 
-const layout = ["bathrooms on both floors", "smoking area in the backyard"];
+const layout = [
+  "bathrooms on both floors",
+  "smoking area in the backyard",
+  "If a room is closed, it's off limits",
+  "Plenty of street parking if the driveway is full",
+];
 
 export default async function House_Rules_Page() {
   return (
