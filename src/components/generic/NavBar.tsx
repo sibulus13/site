@@ -17,12 +17,12 @@ export default function NavBar() {
       className={
         Main.subp +
         (invisible ? "invisible" : "visible") +
-        " fixed w-full z-10 p-2 border-b-2 bg-black md:px-8 "
+        " fixed w-full z-10 p-2 bg-black md:px-8 "
       }
     >
       <div className="flex justify-between ">
         <MotionButton href="/" className="">
-          <h1>Home | 家</h1>
+          <h1>Home</h1>
         </MotionButton>
         <div className="flex justify-right gap-4 md:gap-10">
           {items.map((item, index) => (
