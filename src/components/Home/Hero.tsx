@@ -6,7 +6,7 @@ import face_shot from "p/profile/face shot.jpg";
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 import { GrDocumentPdf } from "react-icons/gr";
 const saveAs = require("file-saver");
-const titles = ["Software Engineer", "Adventurer", "Potato"];
+const titles = ["Software Engineer", "Photographer", "Adventurer"];
 
 export default function Hero() {
   const saveResume = () => {
